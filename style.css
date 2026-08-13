@@ -1,0 +1,1715 @@
+body {
+    margin: 0;
+    background-color: #f4f1ec;
+}
+
+/* CIJELA NASLOVNA */
+
+.naslovna {
+    position: relative;
+    margin: 30px;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+
+/* GLAVNA SLIKA */
+
+.naslovna > img {
+    width: 100%;
+    height: 1000px;
+    object-fit: cover;
+    display: block;
+}
+
+
+/* LOGO */
+
+.logo img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+
+/* ZATAMNJENJE SLIKE */
+
+.zatamnjenje {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+
+/* GORNJI IZBORNIK */
+
+.izbornik {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 25px 50px;
+    box-sizing: border-box;
+
+    z-index: 2;
+}
+
+
+/* LINKOVI U IZBORNIKU */
+
+.izbornik-linkovi {
+    display: flex;
+    gap: 35px;
+    font-size: 20px;
+}
+
+.izbornik-linkovi a {
+    color: white;
+    text-decoration: none;
+}
+
+.izbornik-linkovi a:hover {
+    text-decoration: underline;
+}
+
+
+/* HAPPY PLACE NASLOV */
+
+.naslovni-tekst {
+    position: absolute;
+
+    top: 48%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    text-align: center;
+    color: white;
+
+    z-index: 2;
+}
+
+.naslovni-tekst h1 {
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+
+.naslovni-tekst p {
+    font-size: 24px;
+}
+
+
+/* DONJA TRAKA S PODACIMA */
+
+.brzi-podaci {
+    position: absolute;
+    bottom: 45px;
+    left: 6%;
+    width: 88%;
+
+    display: flex;
+    align-items: center;
+
+    padding: 18px 25px;
+    box-sizing: border-box;
+
+    background: rgba(25, 25, 25, 0.42);
+    backdrop-filter: blur(6px);
+
+    border: 1px solid rgba(255, 255, 255, 0.22);
+    border-radius: 18px;
+
+    color: white;
+    z-index: 2;
+}
+
+.podatak {
+    flex: 1;
+    padding: 0 30px;
+}
+
+.podatak + .podatak {
+    border-left: 1px solid rgba(255, 255, 255, 0.28);
+}
+
+.podatak span {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 6px;
+    opacity: 0.75;
+}
+
+.podatak strong {
+    display: block;
+    font-size: 21px;
+    font-weight: 600;
+}
+
+.podatak p {
+    margin: 5px 0 0;
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+/* NASLOVNA SLIKA - O KUĆI */
+
+.o-kuci-naslovna {
+    position: relative;
+    margin: 30px;
+    height: 600px;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.o-kuci-naslovna img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.o-kuci-zatamnjenje {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.25);
+}
+
+.o-kuci-naslov {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    z-index: 2;
+}
+
+.o-kuci-naslov h1 {
+    font-size: 60px;
+    margin: 0 0 10px;
+}
+
+.o-kuci-naslov p {
+    font-size: 24px;
+}
+
+/* IZBORNIK NA STRANICI O KUĆI */
+
+.kuca-izbornik {
+    position: absolute;
+    bottom: 30px;
+    left: 5%;
+    width: 90%;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    padding: 22px 20px;
+    box-sizing: border-box;
+
+    background: rgba(25, 25, 25, 0.48);
+    backdrop-filter: blur(6px);
+
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 18px;
+
+    z-index: 3;
+}
+
+.kuca-izbornik a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.kuca-izbornik a:hover {
+    text-decoration: underline;
+}
+
+/* OSNOVNI PODACI */
+
+.osnovni-stranica {
+    margin: 30px;
+}
+
+.osnovni-slike {
+    display: flex;
+    gap: 20px;
+    height: 550px;
+}
+
+.osnovni-slike img {
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 30px;
+}
+
+.osnovni-naslov {
+    text-align: center;
+    margin-top: 35px;
+}
+
+.osnovni-naslov h1 {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.osnovni-naslov p {
+    font-size: 22px;
+    font-style: italic;
+}
+
+/* TEKST - OSNOVNI PODACI */
+
+.osnovni-sadrzaj {
+    max-width: 1200px;
+    margin: 50px auto 70px;
+    padding: 45px 55px;
+
+    background: rgba(255, 255, 255, 0.65);
+    border-radius: 25px;
+
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.06);
+}
+
+.osnovni-sadrzaj h1 {
+    text-align: center;
+    font-size: 48px;
+    margin-bottom: 35px;
+}
+
+.osnovni-sadrzaj p {
+    font-size: 20px;
+    line-height: 1.8;
+    margin-bottom: 22px;
+    color: #333;
+}
+
+.osnovni-sadrzaj strong {
+    font-weight: 700;
+    color: #111;
+}
+
+/* RASPORED KUĆE */
+
+.raspored-stranica {
+    min-height: 100vh;
+    padding: 70px 8%;
+    box-sizing: border-box;
+}
+
+.raspored-naslov {
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+.raspored-naslov h1 {
+    font-size: 52px;
+    margin: 0 0 12px;
+}
+
+.raspored-naslov p {
+    font-size: 21px;
+    font-style: italic;
+    margin: 0;
+}
+
+.raspored-kartice {
+    max-width: 1250px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.raspored-kartica {
+    background: rgba(255, 255, 255, 0.72);
+    border-radius: 22px;
+    padding: 40px 25px;
+    text-align: center;
+
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+}
+
+.raspored-kartica h2 {
+    font-size: 30px;
+    margin: 0 0 12px;
+}
+
+.raspored-kartica p {
+    font-size: 18px;
+    margin: 0;
+}
+
+.raspored-opis {
+    max-width: 1000px;
+    margin: 45px auto 0;
+    text-align: center;
+    font-size: 20px;
+    line-height: 1.7;
+}
+
+/* TLOCRT - RASPORED */
+
+.raspored-tlocrt {
+    width: 90%;
+    max-width: 1400px;
+    margin: 50px auto 70px;
+    text-align: center;
+}
+
+.raspored-tlocrt img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 25px;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
+}
+
+/* =========================
+   GRIJANJE I OPREMA
+========================= */
+
+.oprema-stranica {
+    min-height: 100vh;
+    padding: 70px 6%;
+    background: #f4f1ec;
+}
+
+.oprema-naslov {
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+.oprema-naslov h1 {
+    font-size: 52px;
+    margin-bottom: 12px;
+    color: #222;
+}
+
+.oprema-naslov p {
+    font-size: 22px;
+    font-style: italic;
+    color: #666;
+}
+
+.oprema-kartice {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+}
+
+.oprema-kartica {
+    background: rgba(255, 255, 255, 0.88);
+    padding: 38px 32px;
+    border-radius: 24px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.oprema-kartica:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 16px 38px rgba(0, 0, 0, 0.13);
+}
+
+.oprema-kartica h2 {
+    margin-top: 0;
+    margin-bottom: 18px;
+    font-size: 25px;
+    color: #2d2d2d;
+}
+
+.oprema-kartica p {
+    margin: 0;
+    font-size: 18px;
+    line-height: 1.7;
+    color: #444;
+}
+
+/* TABLET */
+
+@media (max-width: 1000px) {
+    .oprema-kartice {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* MOBITEL */
+
+@media (max-width: 650px) {
+    .oprema-kartice {
+        grid-template-columns: 1fr;
+    }
+
+    .oprema-naslov h1 {
+        font-size: 38px;
+    }
+
+    .oprema-stranica {
+        padding: 45px 5%;
+    }
+}
+
+/* =========================
+   POMOĆNI OBJEKTI
+   ========================= */
+
+.pomocni-stranica {
+    min-height: 100vh;
+    padding: 70px 7% 100px;
+    background: #f4f1ec;
+}
+
+.pomocni-naslov {
+    text-align: center;
+    margin-bottom: 65px;
+}
+
+.pomocni-naslov h1 {
+    font-size: 52px;
+    margin: 0 0 12px;
+    color: #222;
+}
+
+.pomocni-naslov p {
+    font-size: 21px;
+    font-style: italic;
+    color: #777;
+}
+
+
+/* REDOVI SA SLIKAMA */
+
+.pomocni-red {
+    max-width: 1400px;
+    margin: 0 auto 55px;
+
+    display: grid;
+    grid-template-columns: 1.15fr 0.85fr;
+    align-items: center;
+
+    background: rgba(255, 255, 255, 0.92);
+    border-radius: 28px;
+    overflow: hidden;
+
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.08);
+}
+
+.pomocni-red.obrnuto {
+    grid-template-columns: 0.85fr 1.15fr;
+}
+
+.pomocni-red.obrnuto .pomocni-slika {
+    order: 2;
+}
+
+.pomocni-red.obrnuto .pomocni-tekst {
+    order: 1;
+}
+
+
+/* FOTOGRAFIJE */
+
+.pomocni-slika {
+    height: 460px;
+    overflow: hidden;
+}
+
+.pomocni-slika img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.pomocni-red:hover .pomocni-slika img {
+    transform: scale(1.035);
+}
+
+
+/* TEKST */
+
+.pomocni-tekst {
+    padding: 55px;
+}
+
+.pomocni-tekst h2 {
+    font-size: 32px;
+    margin: 8px 0 22px;
+    color: #222;
+}
+
+.pomocni-tekst p {
+    font-size: 18px;
+    line-height: 1.75;
+    color: #444;
+}
+
+.mali-naslov {
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #8b765c;
+}
+
+
+/* VRT - ŠIROKA ZAVRŠNA FOTOGRAFIJA */
+
+.pomocni-vrt {
+    position: relative;
+
+    max-width: 1400px;
+    height: 580px;
+
+    margin: 70px auto 0;
+
+    border-radius: 28px;
+    overflow: hidden;
+
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.10);
+}
+
+.pomocni-vrt img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.vrt-tekst {
+    position: absolute;
+
+    left: 45px;
+    bottom: 45px;
+
+    max-width: 520px;
+
+    padding: 30px 35px;
+
+    background: rgba(255, 255, 255, 0.91);
+    backdrop-filter: blur(8px);
+
+    border-radius: 20px;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.vrt-tekst h2 {
+    margin: 7px 0 12px;
+    font-size: 30px;
+    color: #222;
+}
+
+.vrt-tekst p {
+    margin: 0;
+    font-size: 17px;
+    line-height: 1.65;
+    color: #444;
+}
+
+
+/* MOBITEL */
+
+@media (max-width: 900px) {
+
+    .pomocni-stranica {
+        padding: 45px 5%;
+    }
+
+    .pomocni-naslov h1 {
+        font-size: 40px;
+    }
+
+    .pomocni-red,
+    .pomocni-red.obrnuto {
+        grid-template-columns: 1fr;
+    }
+
+    .pomocni-red.obrnuto .pomocni-slika,
+    .pomocni-red.obrnuto .pomocni-tekst {
+        order: initial;
+    }
+
+    .pomocni-slika {
+        height: 330px;
+    }
+
+    .pomocni-tekst {
+        padding: 35px;
+    }
+
+    .pomocni-vrt {
+        height: auto;
+    }
+
+    .pomocni-vrt img {
+        height: 430px;
+    }
+
+    .vrt-tekst {
+        position: relative;
+        left: auto;
+        bottom: auto;
+
+        max-width: none;
+        margin: -60px 20px 20px;
+    }
+}
+
+/* =====================================
+   OKUĆNICA – RAZBACANA FOTO GALERIJA
+   ===================================== */
+
+.okucnica-page {
+    background:
+        radial-gradient(circle at 10% 15%, #ffffff 0, transparent 28%),
+        radial-gradient(circle at 90% 55%, #eee8de 0, transparent 30%),
+        #f7f4ef;
+
+    padding: 65px 6% 90px;
+    overflow: hidden;
+}
+
+
+/* NASLOV */
+
+.okucnica-hero {
+    text-align: center;
+    margin-bottom: 90px;
+}
+
+.okucnica-hero .ukras {
+    display: block;
+    font-size: 30px;
+    color: #9b8b6f;
+    margin-bottom: -8px;
+}
+
+.okucnica-hero h1 {
+    margin: 0;
+    font-size: 64px;
+    font-weight: 500;
+    color: #252525;
+}
+
+.okucnica-hero p {
+    margin-top: 12px;
+    font-size: 22px;
+    font-style: italic;
+    color: #776d63;
+}
+
+
+/* SVAKI RED */
+
+.oku-red {
+    position: relative;
+
+    max-width: 1350px;
+    min-height: 520px;
+
+    margin: -35px auto 30px;
+
+    display: flex;
+    align-items: center;
+}
+
+
+/* FOTOGRAFIJE */
+
+.oku-foto {
+    position: relative;
+    z-index: 2;
+
+    width: 65%;
+    height: 470px;
+
+    border-radius: 25px;
+}
+
+.oku-foto img {
+    position: relative;
+    z-index: 2;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    border-radius: 25px;
+
+    box-shadow:
+        0 18px 40px rgba(35, 31, 27, 0.18);
+
+    transition:
+        transform 0.4s ease,
+        box-shadow 0.4s ease;
+}
+
+
+/* POMOĆNA KARTICA IZA FOTOGRAFIJE */
+
+.foto-podloga {
+    position: absolute;
+
+    width: 96%;
+    height: 96%;
+
+    top: 28px;
+    left: -28px;
+
+    background: #ded3c2;
+
+    border-radius: 25px;
+
+    z-index: 1;
+
+    transform: rotate(-2deg);
+}
+
+
+/* HOVER */
+
+.oku-foto:hover img {
+    transform: translateY(-5px) scale(1.01);
+
+    box-shadow:
+        0 24px 50px rgba(35, 31, 27, 0.23);
+}
+
+
+/* TEKSTUALNE KARTICE */
+
+.oku-kartica {
+    position: relative;
+    z-index: 5;
+
+    width: 39%;
+
+    padding: 38px 42px;
+
+    background: rgba(255, 255, 255, 0.94);
+
+    border-radius: 22px;
+
+    box-shadow:
+        0 15px 35px rgba(40, 35, 30, 0.12);
+}
+
+.oku-kartica h2 {
+    margin: 5px 0 12px;
+
+    font-size: 27px;
+    font-weight: 500;
+
+    color: #29251f;
+}
+
+.oku-kartica p {
+    margin: 0;
+
+    font-size: 17px;
+    line-height: 1.7;
+
+    color: #514b44;
+}
+
+.oku-ikona {
+    display: block;
+
+    margin-bottom: 10px;
+
+    font-size: 24px;
+
+    color: #958269;
+}
+
+.linija {
+    width: 55px;
+    height: 1px;
+
+    margin: 13px 0 18px;
+
+    background: #9d8b73;
+}
+
+
+/* ======================
+   PREKLAPANJE
+   ====================== */
+
+/* HAPPY */
+
+.oku-red-1 .oku-kartica {
+    margin-right: -85px;
+}
+
+.oku-red-1 .oku-foto {
+    transform: rotate(1.3deg);
+}
+
+
+/* ASFALT */
+
+.oku-red-2 {
+    justify-content: flex-start;
+}
+
+.oku-red-2 .oku-foto {
+    width: 68%;
+    transform: translateX(-35px) rotate(-1deg);
+}
+
+.oku-red-2 .oku-kartica {
+    margin-left: -105px;
+    transform: translateY(45px);
+}
+
+
+/* GREDICE */
+
+.oku-red-3 {
+    justify-content: flex-end;
+}
+
+.oku-red-3 .oku-kartica {
+    margin-right: -95px;
+    transform: translateY(-30px);
+}
+
+.oku-red-3 .oku-foto {
+    width: 61%;
+    transform: rotate(1.5deg);
+}
+
+
+/* CVIJEĆE */
+
+.oku-red-4 .oku-foto {
+    width: 64%;
+    transform: translateX(-45px) rotate(-1.5deg);
+}
+
+.oku-red-4 .oku-kartica {
+    margin-left: -90px;
+    transform: translateY(35px);
+}
+
+
+/* VOĆKA */
+
+.oku-red-5 .oku-kartica {
+    margin-right: -80px;
+    transform: translateY(40px);
+}
+
+.oku-red-5 .oku-foto {
+    width: 66%;
+    transform: translateX(25px) rotate(1deg);
+}
+
+
+/* TLAKAVCI */
+
+.oku-red-6 .oku-foto {
+    width: 62%;
+    transform: translateX(-25px) rotate(-1deg);
+}
+
+.oku-red-6 .oku-kartica {
+    margin-left: -80px;
+    transform: translateY(-35px);
+}
+
+
+/* ZEN */
+
+.oku-red-7 {
+    margin-top: -65px;
+}
+
+.oku-red-7 .oku-kartica {
+    margin-right: -100px;
+    transform: translateY(45px);
+}
+
+.oku-red-7 .oku-foto {
+    width: 65%;
+    transform: rotate(1.5deg);
+}
+
+
+/* RAZLIČITE BOJE PODLOGA */
+
+.oku-red-2 .foto-podloga,
+.oku-red-6 .foto-podloga {
+    background: #d9ddd2;
+    left: 30px;
+    transform: rotate(2deg);
+}
+
+.oku-red-3 .foto-podloga,
+.oku-red-7 .foto-podloga {
+    background: #e6dac8;
+}
+
+.oku-red-4 .foto-podloga {
+    background: #d9d2c7;
+    left: 30px;
+    transform: rotate(2deg);
+}
+
+.oku-red-5 .foto-podloga {
+    background: #e2dfd1;
+}
+
+
+/* FOOTER */
+
+.oku-footer {
+    max-width: 1000px;
+
+    margin: 60px auto 0;
+    padding: 35px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+    border-top: 1px solid #d2c7b7;
+
+    color: #62584c;
+}
+
+.oku-footer strong {
+    font-size: 25px;
+    font-style: italic;
+    font-weight: 500;
+}
+
+.oku-footer span {
+    width: 1px;
+    height: 40px;
+    background: #b6a895;
+}
+
+.oku-footer p {
+    margin: 0;
+    font-size: 16px;
+}
+
+
+/* ======================
+   MOBITEL
+   ====================== */
+
+@media (max-width: 900px) {
+
+    .okucnica-page {
+        padding: 45px 5%;
+    }
+
+    .okucnica-hero {
+        margin-bottom: 50px;
+    }
+
+    .okucnica-hero h1 {
+        font-size: 45px;
+    }
+
+    .oku-red {
+        min-height: auto;
+        margin: 0 auto 65px;
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    .oku-foto,
+    .oku-red-2 .oku-foto,
+    .oku-red-3 .oku-foto,
+    .oku-red-4 .oku-foto,
+    .oku-red-5 .oku-foto,
+    .oku-red-6 .oku-foto,
+    .oku-red-7 .oku-foto {
+
+        width: 100%;
+        height: 350px;
+
+        transform: none;
+    }
+
+    .oku-kartica {
+        width: 85%;
+
+        margin: -50px 0 0 !important;
+
+        padding: 28px;
+
+        transform: none !important;
+    }
+
+    .oku-red-2,
+    .oku-red-4,
+    .oku-red-6 {
+        flex-direction: column;
+    }
+
+    .foto-podloga {
+        left: 15px;
+        top: 15px;
+    }
+
+    .oku-footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 12px;
+    }
+
+    .oku-footer span {
+        width: 80px;
+        height: 1px;
+    }
+}
+/* =========================
+   LOKACIJA
+========================= */
+
+.lokacija-stranica {
+    min-height: 100vh;
+    padding: 80px 8%;
+    background: #f4efe8;
+    color: #39352f;
+}
+
+.lokacija-naslov {
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+.lokacija-naslov .mali-naslov {
+    font-size: 12px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    color: #8d7f70;
+}
+
+.lokacija-naslov h1 {
+    font-family: Georgia, serif;
+    font-size: 54px;
+    font-weight: normal;
+    margin: 0 0 12px;
+}
+
+.lokacija-naslov > p:last-child {
+    font-size: 17px;
+    color: #777066;
+}
+
+.lokacija-glavni {
+    max-width: 1050px;
+    margin: 0 auto;
+}
+
+.lokacija-kartica {
+    background: #fffdf9;
+    padding: 65px 70px;
+    box-shadow: 0 18px 45px rgba(60, 50, 40, 0.08);
+    border-radius: 3px;
+}
+
+.lokacija-udaljenost {
+    display: inline-block;
+    padding: 9px 16px;
+    margin-bottom: 25px;
+    background: #ddd1c3;
+    font-size: 13px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.lokacija-kartica h2 {
+    max-width: 700px;
+    font-family: Georgia, serif;
+    font-size: 34px;
+    line-height: 1.25;
+    font-weight: normal;
+    margin-bottom: 22px;
+}
+
+.lokacija-kartica > p {
+    max-width: 800px;
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+.lokacija-sadrzaji {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    margin: 45px 0;
+}
+
+.lokacija-grupa {
+    padding: 30px;
+    background: #eee7df;
+}
+
+.lokacija-grupa span {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #8c7d6e;
+}
+
+.lokacija-grupa h3 {
+    font-family: Georgia, serif;
+    font-size: 22px;
+    font-weight: normal;
+    margin: 0 0 12px;
+}
+
+.lokacija-grupa p {
+    margin: 0;
+    line-height: 1.7;
+    color: #625d56;
+}
+
+.lokacija-gumb {
+    display: inline-block;
+    padding: 15px 28px;
+    background: #514940;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    letter-spacing: 1px;
+    transition: 0.3s ease;
+}
+
+.lokacija-gumb:hover {
+    background: #776b5e;
+    transform: translateY(-2px);
+}
+
+.lokacija-napomena {
+    margin-top: 18px;
+    font-size: 13px !important;
+    font-style: italic;
+    color: #8a837b;
+}
+
+/* MOBITEL */
+
+@media (max-width: 750px) {
+
+    .lokacija-stranica {
+        padding: 50px 20px;
+    }
+
+    .lokacija-naslov h1 {
+        font-size: 42px;
+    }
+
+    .lokacija-kartica {
+        padding: 40px 25px;
+    }
+
+    .lokacija-kartica h2 {
+        font-size: 28px;
+    }
+
+    .lokacija-sadrzaji {
+        grid-template-columns: 1fr;
+    }
+
+    .lokacija-gumb {
+        width: 100%;
+        box-sizing: border-box;
+        text-align: center;
+    }
+}
+
+/* =========================
+   ZAMJENA
+========================= */
+
+.zamjena-sekcija {
+    padding: 80px 8%;
+    background: #f4efe8;
+    color: #39352f;
+}
+
+.zamjena-naslov {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.zamjena-naslov .mali-naslov {
+    font-size: 12px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #8d7f70;
+    margin-bottom: 12px;
+}
+
+.zamjena-naslov h1 {
+    font-family: Georgia, serif;
+    font-size: 54px;
+    font-weight: normal;
+    margin: 0 0 12px;
+}
+
+.zamjena-naslov > p:last-child {
+    color: #777066;
+    font-size: 17px;
+}
+
+.zamjena-kartica {
+    max-width: 1100px;
+    margin: 0 auto;
+    background: #fffdf9;
+    padding: 65px 70px;
+    box-shadow: 0 18px 45px rgba(60, 50, 40, 0.08);
+}
+
+.zamjena-kartica > h2 {
+    font-family: Georgia, serif;
+    font-size: 34px;
+    font-weight: normal;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.zamjena-kartica > p {
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+.zamjena-opcije {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+    margin: 45px 0;
+}
+
+.zamjena-opcija {
+    background: #eee7df;
+    padding: 30px;
+    min-height: 150px;
+}
+
+.zamjena-opcija h3 {
+    font-family: Georgia, serif;
+    font-size: 22px;
+    font-weight: normal;
+    margin-top: 0;
+    margin-bottom: 12px;
+}
+
+.zamjena-opcija p {
+    margin: 0;
+    line-height: 1.7;
+    color: #625d56;
+}
+
+.zamjena-lokacija {
+    margin-top: 40px;
+    padding: 35px;
+    border-left: 4px solid #8d7f70;
+    background: #f7f2ec;
+}
+
+.zamjena-lokacija h2 {
+    font-family: Georgia, serif;
+    font-size: 28px;
+    font-weight: normal;
+    margin-top: 0;
+}
+
+.zamjena-lokacija p {
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.zamjena-zavrsno {
+    margin-top: 35px;
+}
+
+/* MOBITEL */
+
+@media (max-width: 850px) {
+
+    .zamjena-sekcija {
+        padding: 50px 20px;
+    }
+
+    .zamjena-naslov h1 {
+        font-size: 42px;
+    }
+
+    .zamjena-kartica {
+        padding: 40px 25px;
+    }
+
+    .zamjena-opcije {
+        grid-template-columns: 1fr;
+    }
+
+    .zamjena-kartica > h2 {
+        font-size: 28px;
+    }
+}
+
+/* =========================
+   SLIKA KOPRIVNICE
+========================= */
+
+.zamjena-slika {
+    position: relative;
+    max-width: 650px;
+    margin: 0 auto 55px;
+}
+
+.zamjena-slika-pozadina {
+    position: absolute;
+    width: 95%;
+    height: 95%;
+    background: #d8ccbd;
+    top: 25px;
+    left: -25px;
+}
+
+.zamjena-slika img {
+    position: relative;
+    z-index: 2;
+
+    width: 100%;
+    height: auto;
+
+    display: block;
+
+    box-shadow: 0 18px 40px rgba(45, 38, 32, 0.15);
+}
+
+.zamjena-slika-tekst {
+    position: absolute;
+    z-index: 3;
+    left: 45px;
+    bottom: 40px;
+    background: rgba(255, 253, 249, 0.92);
+    padding: 20px 35px;
+}
+
+.zamjena-slika-tekst span {
+    display: block;
+    font-size: 11px;
+    letter-spacing: 3px;
+    color: #817467;
+    margin-bottom: 6px;
+}
+
+.zamjena-slika-tekst h2 {
+    font-family: Georgia, serif;
+    font-size: 34px;
+    font-weight: normal;
+    margin: 0;
+    color: #39352f;
+}
+
+
+/* BROJEVI NA KARTICAMA */
+
+.zamjena-opcija > span {
+    display: block;
+    font-family: Georgia, serif;
+    font-size: 14px;
+    color: #9a8b7c;
+    margin-bottom: 18px;
+}
+
+
+/* MOBITEL */
+
+@media (max-width: 850px) {
+
+    .zamjena-slika {
+        height: 330px;
+        margin-bottom: 40px;
+    }
+
+    .zamjena-slika-pozadina {
+        left: -12px;
+        top: 15px;
+    }
+
+    .zamjena-slika-tekst {
+        left: 20px;
+        bottom: 20px;
+        padding: 15px 22px;
+    }
+
+    .zamjena-slika-tekst h2 {
+        font-size: 27px;
+    }
+}
+
+/* =========================
+   KONTAKT
+========================= */
+
+.kontakt-stranica {
+    min-height: 100vh;
+    padding: 80px 8%;
+    background: #f4efe8;
+    color: #39352f;
+}
+
+.kontakt-naslov {
+    max-width: 900px;
+    margin: 0 auto 55px;
+    text-align: center;
+}
+
+.kontakt-naslov .mali-naslov {
+    font-size: 11px;
+    letter-spacing: 4px;
+    color: #8d7f70;
+    margin-bottom: 12px;
+}
+
+.kontakt-naslov h1 {
+    margin: 0 0 15px;
+
+    font-family: Georgia, serif;
+    font-size: 54px;
+    font-weight: normal;
+}
+
+.kontakt-naslov > p:last-child {
+    font-size: 17px;
+    line-height: 1.7;
+    color: #777066;
+}
+
+
+/* GLAVNA KARTICA */
+
+.kontakt-kartica {
+    max-width: 1050px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+
+    background: #fffdf9;
+
+    box-shadow: 0 18px 45px rgba(60, 50, 40, 0.08);
+}
+
+
+/* LIJEVA STRANA */
+
+.kontakt-lijevo {
+    padding: 65px;
+}
+
+.kontakt-oznaka {
+    margin: 0 0 18px;
+
+    font-size: 11px;
+    letter-spacing: 3px;
+
+    color: #8d7f70;
+}
+
+.kontakt-lijevo h2 {
+    margin: 0 0 25px;
+
+    font-family: Georgia, serif;
+    font-size: 36px;
+    font-weight: normal;
+    line-height: 1.25;
+}
+
+.kontakt-lijevo p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #625d56;
+}
+
+
+/* DESNA STRANA */
+
+.kontakt-desno {
+    padding: 55px;
+
+    background: #ded3c6;
+}
+
+.kontakt-podatak {
+    padding: 25px 0;
+
+    border-bottom: 1px solid rgba(80, 70, 60, 0.18);
+}
+
+.kontakt-podatak:last-child {
+    border-bottom: none;
+}
+
+.kontakt-podatak span {
+    display: block;
+
+    margin-bottom: 10px;
+
+    font-size: 10px;
+    letter-spacing: 3px;
+
+    color: #756a5f;
+}
+
+.kontakt-podatak h3 {
+    margin: 0 0 7px;
+
+    font-family: Georgia, serif;
+    font-size: 21px;
+    font-weight: normal;
+}
+
+.kontakt-podatak p {
+    margin: 0;
+
+    line-height: 1.6;
+    color: #625d56;
+}
+
+
+/* BROJ TELEFONA */
+
+.kontakt-podatak a {
+    font-family: Georgia, serif;
+    font-size: 28px;
+
+    color: #39352f;
+    text-decoration: none;
+}
+
+.kontakt-podatak a:hover {
+    color: #8d7f70;
+}
+
+
+/* DONJI POZIV */
+
+.kontakt-poziv {
+    max-width: 1050px;
+
+    margin: 45px auto 0;
+    padding: 50px;
+
+    text-align: center;
+}
+
+.kontakt-poziv p {
+    margin: 0 0 8px;
+
+    font-size: 12px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+
+    color: #8d7f70;
+}
+
+.kontakt-poziv h2 {
+    margin: 0 0 30px;
+
+    font-family: Georgia, serif;
+    font-size: 38px;
+    font-weight: normal;
+}
+
+
+/* GUMB */
+
+.kontakt-gumb {
+    display: inline-block;
+
+    padding: 15px 32px;
+
+    background: #514940;
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 13px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    transition: 0.3s ease;
+}
+
+.kontakt-gumb:hover {
+    background: #776b5e;
+    transform: translateY(-2px);
+}
+
+
+/* MOBITEL */
+
+@media (max-width: 800px) {
+
+    .kontakt-stranica {
+        padding: 50px 20px;
+    }
+
+    .kontakt-naslov h1 {
+        font-size: 42px;
+    }
+
+    .kontakt-kartica {
+        grid-template-columns: 1fr;
+    }
+
+    .kontakt-lijevo,
+    .kontakt-desno {
+        padding: 35px 25px;
+    }
+
+    .kontakt-lijevo h2 {
+        font-size: 29px;
+    }
+
+    .kontakt-podatak a {
+        font-size: 24px;
+    }
+
+    .kontakt-poziv {
+        padding: 35px 15px;
+    }
+
+    .kontakt-poziv h2 {
+        font-size: 30px;
+    }
+}
+
