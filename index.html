@@ -105,7 +105,7 @@
        <!-- JEZIČNI JAVASCRIPT -->
     <script src="language.js"></script>
 
-  <!-- BROJAČ POSJETA -->
+ <!-- BROJAČ POSJETA -->
 <div class="brojac-posjeta">
     <span class="brojac-ikona">👁</span>
     <span data-i18n="brojac_posjete">Posjete:</span>
@@ -113,14 +113,14 @@
 </div>
 
 <script>
-fetch('https://happyplace.goatcounter.com/counter/TOTAL.json')
-    .then(response => response.json())
-    .then(data => {
-        document.getElementById('broj-posjeta').textContent = data.count;
-    })
-    .catch(() => {
-        document.getElementById('broj-posjeta').textContent = '';
-    });
+    fetch('https://happyplace.goatcounter.com/counter/TOTAL.json?t=' + Date.now())
+        .then(response => response.json())
+        .then(data => {
+            document.getElementById('broj-posjeta').textContent = data.count;
+        })
+        .catch(() => {
+            document.getElementById('broj-posjeta').textContent = '';
+        });
 </script>
 
 <!-- GOATCOUNTER STATISTIKA -->
@@ -130,11 +130,12 @@ fetch('https://happyplace.goatcounter.com/counter/TOTAL.json')
     };
 </script>
 
-<script data-goatcounter="https://happyplace.goatcounter.com/count"
-        async src="//gc.zgo.at/count.js"
-        onload="window.goatcounter.count()">
+<script
+    data-goatcounter="https://happyplace.goatcounter.com/count"
+    async
+    src="//gc.zgo.at/count.js"
+    onload="window.goatcounter.count()">
 </script>
 
 </body>
-
 </html>
