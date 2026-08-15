@@ -1889,7 +1889,7 @@ body {
 }
 
 /* ================================
-   BROJAČ POSJETA
+   HAPPY PLACE - BROJAČ POSJETA
 ================================ */
 
 .brojac-posjeta {
@@ -1898,22 +1898,39 @@ body {
     bottom: 20px;
     z-index: 1000;
 
-    display: flex;
-    align-items: center;
-    gap: 6px;
-
+    min-width: 110px;
     padding: 10px 18px;
 
-    background: rgba(255, 255, 255, 0.88);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    background: rgba(25, 25, 25, 0.72);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
 
-    border: 1px solid rgba(255, 255, 255, 0.5);
-    border-radius: 25px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 22px;
 
-    color: #333;
-    font-size: 14px;
-    font-weight: 500;
+    color: white;
+    text-align: center;
 
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.22);
+}
+
+/* GoatCounter tekst */
+.brojac-posjeta div {
+    border: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    background: transparent !important;
+    color: white !important;
+}
+
+/* Tekst Views for this site */
+.brojac-posjeta div:first-child {
+    font-size: 11px !important;
+    opacity: 0.75;
+}
+
+/* Broj posjeta */
+.brojac-posjeta div:last-child {
+    font-size: 20px !important;
+    font-weight: 600;
 }
