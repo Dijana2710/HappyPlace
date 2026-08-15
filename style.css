@@ -1892,38 +1892,36 @@ body {
    HAPPY PLACE - BROJAČ POSJETA
 ================================ */
 
-.brojac-posjeta,
-.brojac-posjeta * {
-    border: none !important;
-    box-shadow: none !important;
-    color: white !important;
-}
-
 .brojac-posjeta {
     position: fixed;
     right: 25px;
     bottom: 20px;
     z-index: 1000;
 
-    min-width: 115px;
-    padding: 11px 18px !important;
+    display: flex;
+    align-items: center;
+    gap: 7px;
 
-    background: rgba(25, 25, 25, 0.76) !important;
+    padding: 10px 16px;
 
+    background: rgba(25, 25, 25, 0.72);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
 
-    border: 1px solid rgba(255, 255, 255, 0.25) !important;
+    border: 1px solid rgba(255, 255, 255, 0.25);
     border-radius: 22px;
 
-    text-align: center;
+    color: white;
+    font-size: 14px;
 
-    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.22) !important;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.22);
 }
 
-.brojac-posjeta * {
-    background: transparent !important;
-    color: white !important;
-    font-family: inherit !important;
-    text-decoration: none !important;
+.brojac-posjeta strong {
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.brojac-ikona {
+    font-size: 15px;
 }

@@ -105,27 +105,28 @@
        <!-- JEZIČNI JAVASCRIPT -->
     <script src="language.js"></script>
 
-   <!-- VIDLJIVI BROJAČ POSJETA -->
-<div class="brojac-posjeta" id="brojac-posjeta"></div>
+  <!-- BROJAČ POSJETA -->
+<div class="brojac-posjeta">
+    <span class="brojac-ikona">👁</span>
+    <span>Posjete:</span>
+    <strong id="broj-posjeta">...</strong>
+</div>
 
 <script>
-    var t = setInterval(function () {
-        if (window.goatcounter && window.goatcounter.visit_count) {
-            clearInterval(t);
-
-            window.goatcounter.visit_count({
-                append: '#brojac-posjeta',
-                path: 'TOTAL',
-                no_branding: true
-            });
-        }
-    }, 100);
+fetch('https://happyplace.goatcounter.com/counter/TOTAL.json')
+    .then(response => response.json())
+    .then(data => {
+        document.getElementById('broj-posjeta').textContent = data.count;
+    })
+    .catch(() => {
+        document.getElementById('broj-posjeta').textContent = '';
+    });
 </script>
 
 <!-- GOATCOUNTER STATISTIKA -->
 <script data-goatcounter="https://happyplace.goatcounter.com/count"
         async src="//gc.zgo.at/count.js"></script>
-        
+
 </body>
 
 </html>
