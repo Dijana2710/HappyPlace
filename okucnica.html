@@ -1,21 +1,32 @@
 <!DOCTYPE html>
-<html lang="hr">
+<html lang="hr" translate="no">
 
 <head>
     <meta charset="UTF-8">
+    <meta name="google" content="notranslate">
     <title>Okućnica | Happy Place</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+    <a href="javascript:history.back()" class="back-gumb" data-i18n="back">
+        ← Natrag
+    </a>
+
     <main class="okucnica-page">
 
         <!-- NASLOV -->
         <header class="okucnica-hero">
             <span class="ukras">❧</span>
-            <h1>Okućnica</h1>
-            <p>Uređen, ograđen i funkcionalan vanjski prostor</p>
+
+            <h1 data-i18n="okucnica_naslov">
+                Okućnica
+            </h1>
+
+            <p data-i18n="okucnica_podnaslov">
+                Uređen, ograđen i funkcionalan vanjski prostor ukupne veličine parcele 1.630 m².
+            </p>
         </header>
 
 
@@ -24,10 +35,14 @@
 
             <div class="oku-kartica tekst-kartica kartica-lijevo">
                 <span class="oku-ikona">⌂</span>
-                <h2>Potpuno uređena okućnica</h2>
+
+                <h2 data-i18n="okucnica_uredjena_naslov">
+                    Potpuno uređena okućnica
+                </h2>
+
                 <div class="linija"></div>
 
-                <p>
+                <p data-i18n="okucnica_uredjena_opis">
                     Okućnica je u potpunosti uređena i ograđena te pruža
                     privatnost, sigurnost i ugodan prostor za boravak
                     tijekom cijele godine.
@@ -47,15 +62,19 @@
 
             <div class="oku-foto foto-asfalt">
                 <div class="foto-podloga"></div>
-                <img src="Slike/asvalt.jpg" alt="Asfaltirani prilaz">
+                <img src="Slike/vrata.jpg" alt="Asfaltirani prilaz">
             </div>
 
             <div class="oku-kartica tekst-kartica kartica-desno">
                 <span class="oku-ikona">✦</span>
-                <h2>Asfaltirani prilaz i parking</h2>
+
+                <h2 data-i18n="okucnica_asfalt_naslov">
+                    Asfaltirani prilaz i parking
+                </h2>
+
                 <div class="linija"></div>
 
-                <p>
+                <p data-i18n="okucnica_asfalt_opis">
                     Asfaltirani dio okućnice omogućuje praktičan i siguran
                     pristup te dovoljno prostora za parkiranje vozila.
                 </p>
@@ -69,10 +88,14 @@
 
             <div class="oku-kartica tekst-kartica kartica-lijevo">
                 <span class="oku-ikona">❀</span>
-                <h2>Povišene vrtne gredice</h2>
+
+                <h2 data-i18n="okucnica_gredice_naslov">
+                    Povišene vrtne gredice
+                </h2>
+
                 <div class="linija"></div>
 
-                <p>
+                <p data-i18n="okucnica_gredice_opis">
                     Povišene vrtne gredice pružaju praktičan prostor za
                     uzgoj vlastitog povrća i začinskog bilja.
                 </p>
@@ -96,10 +119,14 @@
 
             <div class="oku-kartica tekst-kartica kartica-desno">
                 <span class="oku-ikona">❁</span>
-                <h2>Cvjetne oaze</h2>
+
+                <h2 data-i18n="okucnica_cvijece_naslov">
+                    Cvjetne oaze
+                </h2>
+
                 <div class="linija"></div>
 
-                <p>
+                <p data-i18n="okucnica_cvijece_opis">
                     Cvjetni detalji i uređene zelene površine daju okućnici
                     toplinu, boju i poseban ugođaj.
                 </p>
@@ -113,10 +140,14 @@
 
             <div class="oku-kartica tekst-kartica kartica-lijevo">
                 <span class="oku-ikona">♧</span>
-                <h2>Zelene površine i voćke</h2>
+
+                <h2 data-i18n="okucnica_vocke_naslov">
+                    Zelene površine i voćke
+                </h2>
+
                 <div class="linija"></div>
 
-                <p>
+                <p data-i18n="okucnica_vocke_opis">
                     Prostrane zelene površine i posađene voćke stvaraju
                     prirodan i ugodan ambijent za boravak na otvorenom.
                 </p>
@@ -140,10 +171,14 @@
 
             <div class="oku-kartica tekst-kartica kartica-desno">
                 <span class="oku-ikona">◇</span>
-                <h2>Popločene staze i površine</h2>
+
+                <h2 data-i18n="okucnica_tlaka_naslov">
+                    Popločene staze i površine
+                </h2>
+
                 <div class="linija"></div>
 
-                <p>
+                <p data-i18n="okucnica_tlaka_opis">
                     Popločeni dijelovi povezuju kuću i okućnicu te omogućuju
                     jednostavno i uredno korištenje vanjskog prostora.
                 </p>
@@ -157,10 +192,14 @@
 
             <div class="oku-kartica tekst-kartica kartica-lijevo">
                 <span class="oku-ikona">♡</span>
-                <h2>Zen kutak za opuštanje</h2>
+
+                <h2 data-i18n="okucnica_zen_naslov">
+                    Zen kutak za opuštanje
+                </h2>
+
                 <div class="linija"></div>
 
-                <p>
+                <p data-i18n="okucnica_zen_opis">
                     Miran kutak okućnice pruža prostor za predah,
                     opuštanje i uživanje na otvorenom.
                 </p>
@@ -176,12 +215,23 @@
 
         <!-- ZAVRŠETAK -->
         <footer class="oku-footer">
-            <strong>Happy Place</strong>
+
+            <strong translate="no">
+                Happy Place
+            </strong>
+
             <span></span>
-            <p>Mjesto gdje se udobnost doma nastavlja i na otvorenom.</p>
+
+            <p data-i18n="okucnica_footer">
+                Mjesto gdje se udobnost doma nastavlja i na otvorenom.
+            </p>
+
         </footer>
 
     </main>
 
+    <script src="language.js"></script>
+
 </body>
+
 </html>

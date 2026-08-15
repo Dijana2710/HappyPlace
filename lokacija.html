@@ -10,25 +10,39 @@
 
 <body>
 
+    <a href="javascript:history.back()" class="back-gumb" data-i18n="back">
+        ← Natrag
+    </a>
+
     <div class="lokacija-stranica">
 
         <div class="lokacija-naslov">
-            <p class="mali-naslov">HAPPY PLACE</p>
-            <h1>Lokacija</h1>
-            <p>Mirno mjesto nadomak Virovitice</p>
+            <p class="mali-naslov" translate="no">HAPPY PLACE</p>
+
+            <h1 data-i18n="lokacija_naslov">
+                Lokacija
+            </h1>
+
+            <p data-i18n="lokacija_podnaslov">
+                Mirno mjesto nadomak Virovitice
+            </p>
         </div>
 
         <section class="lokacija-glavni">
 
             <div class="lokacija-kartica">
 
-                <span class="lokacija-udaljenost">8 km od centra Virovitice</span>
+                <span class="lokacija-udaljenost" data-i18n="lokacija_udaljenost">
+                    8 km od centra Virovitice
+                </span>
 
-                <h2>Sve potrebno za svakodnevni život nadohvat je ruke.</h2>
+                <h2 data-i18n="lokacija_glavni_naslov">
+                    Sve potrebno za svakodnevni život nadohvat je ruke.
+                </h2>
 
-                <p>
-                    Nekretnina se nalazi u <strong>općini Špišić Bukovica</strong>,
-                    svega <strong>8 km od centra Virovitice</strong>, na lokaciji
+                <p data-i18n="lokacija_opis">
+                    Nekretnina se nalazi u općini Špišić Bukovica,
+                    svega 8 km od centra Virovitice, na lokaciji
                     koja spaja mirnije stanovanje s vrlo dobrom dostupnošću
                     svakodnevnih sadržaja.
                 </p>
@@ -36,21 +50,37 @@
                 <div class="lokacija-sadrzaji">
 
                     <div class="lokacija-grupa">
-                        <span>oko 100 m</span>
-                        <h3>U neposrednoj blizini</h3>
-                        <p>
+
+                        <span data-i18n="lokacija_100m">
+                            oko 100 m
+                        </span>
+
+                        <h3 data-i18n="lokacija_blizina_naslov">
+                            U neposrednoj blizini
+                        </h3>
+
+                        <p data-i18n="lokacija_blizina_opis">
                             Ambulanta, ljekarna, pošta, trgovine,
                             mesnica i autobusna stanica.
                         </p>
+
                     </div>
 
                     <div class="lokacija-grupa">
-                        <span>do 700 m</span>
-                        <h3>Na nekoliko minuta</h3>
-                        <p>
+
+                        <span data-i18n="lokacija_700m">
+                            do 700 m
+                        </span>
+
+                        <h3 data-i18n="lokacija_minute_naslov">
+                            Na nekoliko minuta
+                        </h3>
+
+                        <p data-i18n="lokacija_minute_opis">
                             Osnovna škola, dječji vrtić i crkva,
                             povezani uređenim pješačkim stazama.
                         </p>
+
                     </div>
 
                 </div>
@@ -59,11 +89,12 @@
                     href="https://www.google.com/maps/search/?api=1&query=Špišić+Bukovica"
                     target="_blank"
                     rel="noopener noreferrer"
-                    class="lokacija-gumb">
+                    class="lokacija-gumb"
+                    data-i18n="lokacija_karta">
                     Pogledaj lokaciju na karti
                 </a>
 
-                <p class="lokacija-napomena">
+                <p class="lokacija-napomena" data-i18n="lokacija_napomena">
                     Točna lokacija nekretnine dostupna je ozbiljnim
                     zainteresiranim kupcima prilikom dogovora za razgledavanje.
                 </p>
@@ -73,6 +104,8 @@
         </section>
 
     </div>
+
+    <script src="language.js"></script>
 
 </body>
 </html>

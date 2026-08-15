@@ -1,19 +1,31 @@
 <!DOCTYPE html>
-<html lang="hr">
+<html lang="hr" translate="no">
 
 <head>
     <meta charset="UTF-8">
+    <meta name="google" content="notranslate">
     <title>Pomoćni objekti | Happy Place</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+    <a href="javascript:history.back()" class="back-gumb" data-i18n="back">
+        ← Natrag
+    </a>
+
     <div class="pomocni-stranica">
 
         <div class="pomocni-naslov">
-            <h1>Pomoćni objekti</h1>
-            <p>Garaža, podrum, spremište i radionica</p>
+
+            <h1 data-i18n="pomocni_naslov">
+                Pomoćni objekti
+            </h1>
+
+            <p data-i18n="pomocni_podnaslov">
+                Garaža, podrum, spremište i radionica
+            </p>
+
         </div>
 
 
@@ -25,21 +37,26 @@
             </div>
 
             <div class="pomocni-tekst">
-                <span class="mali-naslov">DODATNI PROSTOR</span>
 
-                <h2>Garaža, spremište i podrum</h2>
+                <span class="mali-naslov" data-i18n="pomocni_dodatni">
+                    DODATNI PROSTOR
+                </span>
 
-                <p>
+                <h2 data-i18n="pomocni_garaza_naslov">
+                    Garaža, spremište i podrum
+                </h2>
+
+                <p data-i18n="pomocni_garaza_opis1">
                     Uz glavnu kuću nalaze se fizički odvojene pomoćne prostorije.
                     Garaža, spremište i podrum zajedno čine funkcionalan dodatni
                     prostor za vozilo, pohranu i druge potrebe.
                 </p>
 
-                <p>
-                    Garaža je opremljena
-                    <strong>automatskim vratima na motor i daljinskim upravljanjem</strong>,
-                    a ispod nje nalazi se podrum.
+                <p data-i18n="pomocni_garaza_opis2">
+                    Garaža je opremljena automatskim vratima na motor i daljinskim
+                    upravljanjem, a ispod nje nalazi se podrum.
                 </p>
+
             </div>
 
         </section>
@@ -53,24 +70,29 @@
             </div>
 
             <div class="pomocni-tekst">
-                <span class="mali-naslov">PRAKTIČNO I ODVOJENO</span>
 
-                <h2>Zasebna radionica</h2>
+                <span class="mali-naslov" data-i18n="pomocni_prakticno">
+                    PRAKTIČNO I ODVOJENO
+                </span>
 
-                <p>
-                    Nasuprot garaži nalazi se
-                    <strong>potpuno uređena radionica s peći na drva</strong>.
+                <h2 data-i18n="pomocni_radionica_naslov">
+                    Zasebna radionica
+                </h2>
+
+                <p data-i18n="pomocni_radionica_opis1">
+                    Nasuprot garaži nalazi se potpuno uređena radionica s peći na drva.
                 </p>
 
-                <p>
+                <p data-i18n="pomocni_radionica_opis2">
                     Prostor je fizički odvojen od glavne kuće i odmah spreman
                     za korištenje.
                 </p>
 
-                <p>
+                <p data-i18n="pomocni_radionica_opis3">
                     Sve pomoćne prostorije imaju termo fasadu kao i kuća,
                     popločene su pločicama i priključene na električnu energiju.
                 </p>
+
             </div>
 
         </section>
@@ -82,19 +104,29 @@
             <img src="Slike/vrt.jpg" alt="Vrt i okućnica">
 
             <div class="vrt-tekst">
-                <span class="mali-naslov">OKUĆNICA</span>
 
-                <h2>Prostor za život i boravak na otvorenom</h2>
+                <span class="mali-naslov" data-i18n="pomocni_okucnica">
+                    OKUĆNICA
+                </span>
 
-                <p>
+                <h2 data-i18n="pomocni_vrt_naslov">
+                    Prostor za život i boravak na otvorenom
+                </h2>
+
+                <p data-i18n="pomocni_vrt_opis">
                     Uređena i ograđena okućnica pruža dovoljno prostora za
                     odmor, vrt, druženje i različite sadržaje na otvorenom.
                 </p>
+
             </div>
 
         </section>
 
     </div>
+
+
+    <!-- ZAJEDNIČKI JEZIČNI JAVASCRIPT -->
+    <script src="language.js"></script>
 
 </body>
 

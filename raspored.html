@@ -1,70 +1,113 @@
 <!DOCTYPE html>
-<html lang="hr">
+<html lang="hr" translate="no">
 
 <head>
     <meta charset="UTF-8">
+    <meta name="google" content="notranslate">
     <title>Raspored | Happy Place</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+    <a href="javascript:history.back()" class="back-gumb" data-i18n="back">
+        ← Natrag
+    </a>
+
     <div class="raspored-stranica">
 
         <div class="raspored-naslov">
-            <h1>Raspored kuće</h1>
-            <p>Prostran i funkcionalan prostor za svakodnevni život i rad</p>
+
+            <h1 data-i18n="raspored_naslov">
+                Raspored kuće
+            </h1>
+
+            <p data-i18n="raspored_podnaslov">
+                Prostran i funkcionalan prostor za svakodnevni život i rad
+            </p>
+
         </div>
 
         <div class="raspored-tlocrt">
-    <img src="Slike/tlocrt.jpg" alt="Informativni 3D tlocrt kuće">
-</div>
+
+            <img src="Slike/tlocrt.jpg"
+                 alt="Informativni 3D tlocrt kuće">
+
+        </div>
 
         <div class="raspored-kartice">
 
             <div class="raspored-kartica">
                 <h2>3</h2>
-                <p>spavaće sobe</p>
+
+                <p data-i18n="raspored_spavace">
+                    spavaće sobe
+                </p>
             </div>
 
             <div class="raspored-kartica">
                 <h2>1</h2>
-                <p>kupaonica</p>
+
+                <p data-i18n="raspored_kupaonica">
+                    kupaonica
+                </p>
             </div>
 
             <div class="raspored-kartica">
                 <h2>1</h2>
-                <p>tehnička prostorija</p>
+
+                <p data-i18n="raspored_tehnicka">
+                    tehnička prostorija
+                </p>
             </div>
 
             <div class="raspored-kartica">
                 <h2>1</h2>
-                <p>smočnica</p>
+
+                <p data-i18n="raspored_smocnica">
+                    smočnica
+                </p>
             </div>
 
             <div class="raspored-kartica">
-                <h2>Open space</h2>
-                <p>dnevni boravak, blagovaonica i kuhinja</p>
+
+                <h2 data-i18n="raspored_open">
+                    Open space
+                </h2>
+
+                <p data-i18n="raspored_dnevni">
+                    dnevni boravak, blagovaonica i kuhinja
+                </p>
+
             </div>
 
             <div class="raspored-kartica">
-                <h2>Tavan</h2>
-                <p>pristup iz tehničke prostorije</p>
+
+                <h2 data-i18n="raspored_tavan">
+                    Tavan
+                </h2>
+
+                <p data-i18n="raspored_tavan_opis">
+                    pristup iz tehničke prostorije
+                </p>
+
             </div>
 
         </div>
 
         <div class="raspored-opis">
 
-            <p>
+            <p data-i18n="raspored_opis">
                 Središnji dnevni prostor namjerno je projektiran prostrano kako bi,
                 osim za svakodnevni obiteljski život, pružao dovoljno prostora za
-                <strong>ugodna druženja, proslave i veća okupljanja.</strong>
+                ugodna druženja, proslave i veća okupljanja.
             </p>
 
         </div>
 
     </div>
+
+    <script src="language.js"></script>
 
 </body>
 

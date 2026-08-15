@@ -1,13 +1,23 @@
 <!DOCTYPE html>
-<html lang="hr">
+<html lang="hr" translate="no">
 
 <head>
     <meta charset="UTF-8">
+
+    <meta name="google" content="notranslate">
+
     <title>Happy Place</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+
+    <div class="jezici">
+        <button onclick="promijeniJezik('hr')">HR</button>
+        <button onclick="promijeniJezik('en')">EN</button>
+        <button onclick="promijeniJezik('de')">DE</button>
+    </div>
 
     <div class="naslovna" id="pocetna">
 
@@ -15,16 +25,18 @@
         <nav class="izbornik">
 
             <div class="logo">
-                <img src="Slike/logo.jpg" alt="Happy Place logo">
+               <img src="Slike/logo.jpg"
+     alt="Happy Place logo"
+     translate="no">
             </div>
 
             <div class="izbornik-linkovi">
-                <a href="#pocetna">Početna</a>
-                <a href="o-kuci.html">O kući</a>
-                <a href="lokacija.html">Lokacija</a>
-                <a href="#galerija">Galerija</a>
-              <a href="zamjena.html">Zamjena</a>
-               <a href="kontakt.html">Kontakt</a>
+                <a href="#pocetna" data-i18n="menu_pocetna">Početna</a>
+                <a href="o-kuci.html" data-i18n="menu_o_kuci">O kući</a>
+                <a href="lokacija.html" data-i18n="menu_lokacija">Lokacija</a>
+                <a href="#galerija" data-i18n="menu_galerija">Galerija</a>
+                <a href="zamjena.html" data-i18n="menu_zamjena">Zamjena</a>
+                <a href="kontakt.html" data-i18n="menu_kontakt">Kontakt</a>
             </div>
 
         </nav>
@@ -40,8 +52,11 @@
 
         <!-- NASLOV NA SLICI -->
         <div class="naslovni-tekst">
-            <h1>Happy Place</h1>
-            <p>Moj mali dio svemira</p>
+            <h1 translate="no">Happy Place</h1>
+
+            <p data-i18n="pocetna_slogan">
+                Moj mali dio svemira
+            </p>
         </div>
 
 
@@ -49,28 +64,47 @@
         <div class="brzi-podaci">
 
             <div class="podatak">
-                <span>Lokacija</span>
+                <span data-i18n="podatak_lokacija">Lokacija</span>
+
                 <strong>Špišić Bukovica</strong>
-                <p>8 km od centra Virovitice</p>
+
+                <p data-i18n="podatak_udaljenost">
+                    8 km od centra Virovitice
+                </p>
             </div>
 
             <div class="podatak">
-                <span>Cijena</span>
+                <span data-i18n="podatak_cijena">Cijena</span>
+
                 <strong>250.000 €</strong>
-                <p>Prodaje vlasnik</p>
+
+                <p data-i18n="podatak_vlasnik">
+                    Prodaje vlasnik
+                </p>
             </div>
 
             <div class="podatak">
-                <span>Moguća zamjena</span>
-                <strong>2 novija manja stana</strong>
-                <p>u Koprivnici</p>
+                <span data-i18n="podatak_zamjena">
+                    Moguća zamjena
+                </span>
+
+                <strong data-i18n="podatak_stanovi">
+                    Noviji stan ili 2 manja
+                </strong>
+
+                <p data-i18n="podatak_koprivnica">
+                    u Koprivnici
+                </p>
             </div>
 
         </div>
 
     </div>
 
+
+    <!-- JEZIČNI JAVASCRIPT -->
+    <script src="language.js"></script>
+
 </body>
 
 </html>
- 

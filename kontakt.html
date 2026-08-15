@@ -12,17 +12,29 @@
 
 <body>
 
+    <a href="javascript:history.back()" class="back-gumb" data-i18n="back">
+        ← Natrag
+    </a>
+
     <section class="kontakt-stranica">
 
         <!-- NASLOV -->
 
         <div class="kontakt-naslov">
-            <p class="mali-naslov">HAPPY PLACE</p>
-            <h1>Kontakt</h1>
-            <p>
+
+            <p class="mali-naslov" translate="no">
+                HAPPY PLACE
+            </p>
+
+            <h1 data-i18n="kontakt_naslov">
+                Kontakt
+            </h1>
+
+            <p data-i18n="kontakt_uvod">
                 Za dodatne informacije i dogovor oko razgledavanja
                 slobodno nam se javite.
             </p>
+
         </div>
 
 
@@ -32,16 +44,20 @@
 
             <div class="kontakt-lijevo">
 
-                <p class="kontakt-oznaka">IZRAVNO OD VLASNIKA</p>
+                <p class="kontakt-oznaka" data-i18n="kontakt_vlasnik">
+                    IZRAVNO OD VLASNIKA
+                </p>
 
-                <h2>Zainteresirani ste za nekretninu?</h2>
+                <h2 data-i18n="kontakt_zainteresirani">
+                    Zainteresirani ste za nekretninu?
+                </h2>
 
-                <p>
+                <p data-i18n="kontakt_pitanja">
                     Rado ćemo odgovoriti na dodatna pitanja i,
                     prema dogovoru, organizirati razgledavanje nekretnine.
                 </p>
 
-                <p>
+                <p data-i18n="kontakt_dokumentacija">
                     Ozbiljnim zainteresiranim kupcima možemo omogućiti
                     uvid u relevantnu dokumentaciju, zemljišnoknjižni
                     izvadak te račune vezane uz troškove režija.
@@ -53,33 +69,51 @@
             <div class="kontakt-desno">
 
                 <div class="kontakt-podatak">
-                    <span>TELEFON</span>
 
-                    <a href="tel:+385921548852">
+                    <span data-i18n="kontakt_telefon">
+                        TELEFON
+                    </span>
+
+                    <a href="#"
+                       class="kontakt-broj"
+                       onclick="nazovi(event)">
                         092 / 154 - 8852
                     </a>
+
                 </div>
 
 
                 <div class="kontakt-podatak">
-                    <span>DOSTUPNOST</span>
 
-                    <h3>Radnim danom poslije 16 sati</h3>
+                    <span data-i18n="kontakt_dostupnost">
+                        DOSTUPNOST
+                    </span>
 
-                    <p>
+                    <h3 data-i18n="kontakt_radni_dani">
+                        Radnim danom poslije 16 sati
+                    </h3>
+
+                    <p data-i18n="kontakt_vikend">
                         Vikendom prema dogovoru.
                     </p>
+
                 </div>
 
 
                 <div class="kontakt-podatak">
-                    <span>RAZGLEDAVANJE</span>
 
-                    <h3>Prema prethodnom dogovoru</h3>
+                    <span data-i18n="kontakt_razgledavanje">
+                        RAZGLEDAVANJE
+                    </span>
 
-                    <p>
+                    <h3 data-i18n="kontakt_prema_dogovoru">
+                        Prema prethodnom dogovoru
+                    </h3>
+
+                    <p data-i18n="kontakt_termin">
                         Molimo da termin razgledavanja dogovorimo unaprijed.
                     </p>
+
                 </div>
 
             </div>
@@ -91,17 +125,119 @@
 
         <div class="kontakt-poziv">
 
-            <p>Želite saznati više?</p>
+            <p data-i18n="kontakt_vise">
+                Želite saznati više?
+            </p>
 
-            <h2>Dogovorimo razgledavanje.</h2>
+            <h2 data-i18n="kontakt_dogovorimo">
+                Dogovorimo razgledavanje.
+            </h2>
 
-            <a href="tel:+385921548852" class="kontakt-gumb">
+            <a href="#"
+               class="kontakt-gumb"
+               onclick="nazovi(event)"
+               data-i18n="kontakt_nazovite">
                 Nazovite nas
             </a>
 
         </div>
 
     </section>
+
+
+    <!-- POPUP ZA RAČUNALO -->
+
+    <div id="telefon-popup" class="telefon-popup">
+
+        <div class="telefon-popup-sadrzaj">
+
+            <button
+                class="telefon-popup-zatvori"
+                onclick="zatvoriTelefonPopup()">
+                ×
+            </button>
+
+            <p class="mali-naslov">
+                HAPPY PLACE
+            </p>
+
+            <h2>Nazovite nas</h2>
+
+            <p class="telefon-popup-broj">
+                092 / 154 - 8852
+            </p>
+
+            <p>
+                Radnim danom poslije 16 sati.<br>
+                Vikendom prema dogovoru.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <script src="language.js"></script>
+
+
+    <script>
+
+        function nazovi(event) {
+
+            event.preventDefault();
+
+            const jeMobitel =
+                /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+
+            if (jeMobitel) {
+
+                window.location.href = "tel:+385921548852";
+
+            } else {
+
+                document.getElementById("telefon-popup")
+                    .classList.add("aktivan");
+
+            }
+
+        }
+
+
+        function zatvoriTelefonPopup() {
+
+            document.getElementById("telefon-popup")
+                .classList.remove("aktivan");
+
+        }
+
+
+        /* zatvaranje klikom izvan prozora */
+
+        document.getElementById("telefon-popup")
+            .addEventListener("click", function(event) {
+
+                if (event.target === this) {
+
+                    zatvoriTelefonPopup();
+
+                }
+
+            });
+
+
+        /* zatvaranje tipkom ESC */
+
+        document.addEventListener("keydown", function(event) {
+
+            if (event.key === "Escape") {
+
+                zatvoriTelefonPopup();
+
+            }
+
+        });
+
+    </script>
 
 </body>
 

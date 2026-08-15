@@ -381,92 +381,6 @@ body {
 }
 
 /* =========================
-   GRIJANJE I OPREMA
-========================= */
-
-.oprema-stranica {
-    min-height: 100vh;
-    padding: 70px 6%;
-    background: #f4f1ec;
-}
-
-.oprema-naslov {
-    text-align: center;
-    margin-bottom: 55px;
-}
-
-.oprema-naslov h1 {
-    font-size: 52px;
-    margin-bottom: 12px;
-    color: #222;
-}
-
-.oprema-naslov p {
-    font-size: 22px;
-    font-style: italic;
-    color: #666;
-}
-
-.oprema-kartice {
-    max-width: 1400px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 28px;
-}
-
-.oprema-kartica {
-    background: rgba(255, 255, 255, 0.88);
-    padding: 38px 32px;
-    border-radius: 24px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.oprema-kartica:hover {
-    transform: translateY(-7px);
-    box-shadow: 0 16px 38px rgba(0, 0, 0, 0.13);
-}
-
-.oprema-kartica h2 {
-    margin-top: 0;
-    margin-bottom: 18px;
-    font-size: 25px;
-    color: #2d2d2d;
-}
-
-.oprema-kartica p {
-    margin: 0;
-    font-size: 18px;
-    line-height: 1.7;
-    color: #444;
-}
-
-/* TABLET */
-
-@media (max-width: 1000px) {
-    .oprema-kartice {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-/* MOBITEL */
-
-@media (max-width: 650px) {
-    .oprema-kartice {
-        grid-template-columns: 1fr;
-    }
-
-    .oprema-naslov h1 {
-        font-size: 38px;
-    }
-
-    .oprema-stranica {
-        padding: 45px 5%;
-    }
-}
-
-/* =========================
    POMOĆNI OBJEKTI
    ========================= */
 
@@ -1713,3 +1627,263 @@ body {
     }
 }
 
+.back-gumb {
+    position: fixed;
+    top: 25px;
+    left: 25px;
+    z-index: 1000;
+
+    padding: 10px 18px;
+
+    background-color: rgba(255, 255, 255, 0.85);
+    color: #5f554d;
+
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+
+    border: 1px solid rgba(95, 85, 77, 0.25);
+    border-radius: 25px;
+
+    backdrop-filter: blur(6px);
+
+    transition: 0.25s ease;
+}
+
+.back-gumb:hover {
+    background-color: #5f554d;
+    color: white;
+    transform: translateX(-3px);
+}
+
+.jezici {
+    position: fixed;
+    top: 25px;
+    right: 25px;
+    z-index: 1000;
+
+    display: flex;
+    gap: 6px;
+}
+
+.jezici button {
+    border: 1px solid rgba(95, 85, 77, 0.3);
+    background: rgba(255, 255, 255, 0.85);
+    color: #5f554d;
+
+    padding: 8px 10px;
+    border-radius: 20px;
+
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.jezici button:hover {
+    background: #5f554d;
+    color: white;
+}
+
+/* =========================
+   OPREMA
+========================= */
+
+.oprema-stranica {
+    min-height: 100vh;
+    padding: 80px 6% 100px;
+    box-sizing: border-box;
+    background: #f4f1ec;
+}
+
+.oprema-naslov {
+    max-width: 1000px;
+    margin: 0 auto 55px;
+    text-align: center;
+}
+
+.oprema-naslov h1 {
+    margin: 0 0 14px;
+    font-size: 52px;
+    font-weight: 600;
+    color: #222;
+}
+
+.oprema-naslov p {
+    margin: 0;
+    font-size: 21px;
+    line-height: 1.6;
+    font-style: italic;
+    color: #6d665e;
+}
+
+.oprema-kartice {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 28px;
+}
+
+.oprema-kartica {
+    min-height: 210px;
+    padding: 38px 32px;
+    box-sizing: border-box;
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid rgba(120, 105, 90, 0.08);
+    border-radius: 24px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.oprema-kartica:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 16px 38px rgba(0, 0, 0, 0.12);
+}
+
+.oprema-kartica h2 {
+    margin: 0 0 18px;
+    font-size: 25px;
+    line-height: 1.3;
+    color: #2d2d2d;
+}
+
+.oprema-kartica p {
+    margin: 0;
+    font-size: 18px;
+    line-height: 1.75;
+    color: #444;
+}
+
+@media (max-width: 1000px) {
+    .oprema-kartice {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 650px) {
+    .oprema-stranica {
+        padding: 60px 5% 80px;
+    }
+
+    .oprema-naslov {
+        margin-bottom: 40px;
+    }
+
+    .oprema-naslov h1 {
+        font-size: 38px;
+    }
+
+    .oprema-naslov p {
+        font-size: 18px;
+    }
+
+    .oprema-kartice {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .oprema-kartica {
+        min-height: auto;
+        padding: 30px 24px;
+    }
+
+    .oprema-kartica h2 {
+        font-size: 23px;
+    }
+
+    .oprema-kartica p {
+        font-size: 17px;
+    }
+}
+
+/* =========================
+   KONTAKT - TELEFON POPUP
+========================= */
+
+.telefon-popup {
+    position: fixed;
+    inset: 0;
+
+    background: rgba(40, 34, 29, 0.45);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition: 0.3s ease;
+
+    z-index: 9999;
+}
+
+.telefon-popup.aktivan {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+.telefon-popup-sadrzaj {
+    position: relative;
+
+    width: min(90%, 470px);
+
+    background: #f5f0e9;
+
+    padding: 55px 45px;
+
+    text-align: center;
+
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.18);
+}
+
+
+.telefon-popup-sadrzaj h2 {
+    margin: 12px 0 25px;
+
+    font-size: 34px;
+    font-weight: 400;
+
+    color: #40372f;
+}
+
+
+.telefon-popup-broj {
+    font-size: 27px;
+    font-weight: 500;
+
+    color: #40372f;
+
+    margin: 10px 0 25px;
+}
+
+
+.telefon-popup-sadrzaj p {
+    line-height: 1.8;
+
+    color: #665b52;
+}
+
+
+.telefon-popup-zatvori {
+    position: absolute;
+
+    top: 15px;
+    right: 20px;
+
+    border: none;
+    background: transparent;
+
+    font-size: 32px;
+    font-weight: 300;
+
+    color: #554a42;
+
+    cursor: pointer;
+}
+
+
+.telefon-popup-zatvori:hover {
+    opacity: 0.6;
+}
