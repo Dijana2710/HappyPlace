@@ -112,29 +112,44 @@
     <strong id="broj-posjeta">...</strong>
 </div>
 
-<script>
-    fetch('https://happyplace.goatcounter.com/counter/TOTAL.json?t=' + Date.now())
-        .then(response => response.json())
-        .then(data => {
-            document.getElementById('broj-posjeta').textContent = data.count;
-        })
-        .catch(() => {
-            document.getElementById('broj-posjeta').textContent = '';
-        });
-</script>
 
-<!-- GOATCOUNTER STATISTIKA -->
+<!-- GOATCOUNTER -->
 <script>
     window.goatcounter = {
         no_onload: true
     };
+
+    function ucitajBrojPosjeta() {
+
+        fetch('https://happyplace.goatcounter.com/counter/TOTAL.json?t=' + Date.now())
+
+            .then(response => response.json())
+
+            .then(data => {
+
+                document.getElementById('broj-posjeta').textContent = data.count;
+
+            })
+
+            .catch(() => {
+
+                document.getElementById('broj-posjeta').textContent = '';
+
+            });
+    }
 </script>
+
 
 <script
     data-goatcounter="https://happyplace.goatcounter.com/count"
     async
     src="//gc.zgo.at/count.js"
-    onload="window.goatcounter.count()">
+
+    onload="
+        window.goatcounter.count();
+
+        setTimeout(ucitajBrojPosjeta, 1500);
+    ">
 </script>
 
 </body>
