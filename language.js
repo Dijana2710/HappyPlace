@@ -15,13 +15,14 @@ const translations = {
         menu_kontakt: "Kontakt",
 
         pocetna_slogan: "Moj mali dio svemira",
+        brojac_posjete: "Posjete:",
 
         podatak_lokacija: "Lokacija",
         podatak_udaljenost: "8 km od centra Virovitice",
         podatak_cijena: "Cijena",
         podatak_vlasnik: "Prodaje vlasnik",
         podatak_zamjena: "Moguća zamjena",
-        podatak_stanovi: " Noviji stan ili 2 manja",
+        podatak_stanovi: "Noviji stan ili 2 manja",
         podatak_koprivnica: "u Koprivnici",
 
         // ZAJEDNIČKO
@@ -183,6 +184,7 @@ const translations = {
         menu_kontakt: "Contact",
 
         pocetna_slogan: "My little corner of the universe",
+        brojac_posjete: "Visits:",
 
         podatak_lokacija: "Location",
         podatak_udaljenost: "8 km from the centre of Virovitica",
@@ -350,6 +352,7 @@ const translations = {
         menu_kontakt: "Kontakt",
 
         pocetna_slogan: "Mein kleiner Teil des Universums",
+        brojac_posjete: "Besuche:",
 
         podatak_lokacija: "Lage",
         podatak_udaljenost: "8 km vom Zentrum von Virovitica entfernt",
