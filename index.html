@@ -105,6 +105,26 @@
        <!-- JEZIČNI JAVASCRIPT -->
     <script src="language.js"></script>
 
+    <!-- VIDLJIVI BROJAČ POSJETA -->
+<div class="brojac-posjeta">
+    👁 <span>Posjeta:</span>
+    <span id="gc-counter">...</span>
+</div>
+
+<script>
+    var t = setInterval(function () {
+        if (window.goatcounter && window.goatcounter.visit_count) {
+            clearInterval(t);
+
+            window.goatcounter.visit_count({
+                append: '#gc-counter',
+                path: 'TOTAL',
+                no_branding: true
+            });
+        }
+    }, 100);
+</script>
+
     <!-- GOATCOUNTER - STATISTIKA POSJETA -->
     <script data-goatcounter="https://happyplace.goatcounter.com/count"
             async src="//gc.zgo.at/count.js"></script>
