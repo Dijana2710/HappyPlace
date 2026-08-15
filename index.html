@@ -124,8 +124,16 @@ fetch('https://happyplace.goatcounter.com/counter/TOTAL.json')
 </script>
 
 <!-- GOATCOUNTER STATISTIKA -->
+<script>
+    window.goatcounter = {
+        no_onload: true
+    };
+</script>
+
 <script data-goatcounter="https://happyplace.goatcounter.com/count"
-        async src="//gc.zgo.at/count.js"></script>
+        async src="//gc.zgo.at/count.js"
+        onload="window.goatcounter.count()">
+</script>
 
 </body>
 
