@@ -1983,36 +1983,3 @@ body {
 .brojac-ikona {
     font-size: 15px;
 }
-
-/* =========================================
-   STOLARIJA - DVIJE SLIKE
-========================================= */
-
-.oprema-flip-straznja.stolarija-dvije-slike {
-    display: flex;
-    flex-direction: row;
-    padding: 0;
-    gap: 3px;
-    overflow: hidden;
-}
-
-.oprema-flip-straznja.stolarija-dvije-slike img {
-    width: 50%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    display: block;
-    object-fit: cover;
-    object-position: center;
-}
-
-
-/* MOBITEL - STOLARIJA */
-
-@media (max-width: 650px) {
-
-    .oprema-flip-straznja.stolarija-dvije-slike {
-        gap: 2px;
-    }
-
-}
