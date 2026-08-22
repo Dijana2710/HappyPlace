@@ -1684,7 +1684,7 @@ body {
 }
 
 /* =========================
-   OPREMA
+   OPREMA - FLIP KARTICE
 ========================= */
 
 .oprema-stranica {
@@ -1724,34 +1724,71 @@ body {
     gap: 28px;
 }
 
-.oprema-kartica {
-    min-height: 210px;
-    padding: 38px 32px;
+.oprema-flip-kartica {
+    width: 100%;
+    height: 260px;
+    perspective: 1200px;
+    cursor: pointer;
+}
+
+.oprema-flip-unutra {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s ease;
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+}
+
+.oprema-flip-kartica:hover .oprema-flip-unutra {
+    transform: rotateY(180deg);
+}
+
+.oprema-flip-prednja,
+.oprema-flip-straznja {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
     box-sizing: border-box;
-    background: rgba(255, 255, 255, 0.9);
-    border: 1px solid rgba(120, 105, 90, 0.08);
     border-radius: 24px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
 }
 
-.oprema-kartica:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 16px 38px rgba(0, 0, 0, 0.12);
+.oprema-flip-prednja {
+    padding: 38px 32px;
+    background: rgba(255, 255, 255, 0.94);
+    border: 1px solid rgba(120, 105, 90, 0.08);
+    transform: rotateY(0deg);
 }
 
-.oprema-kartica h2 {
+.oprema-flip-prednja h2 {
     margin: 0 0 18px;
     font-size: 25px;
     line-height: 1.3;
     color: #2d2d2d;
 }
 
-.oprema-kartica p {
+.oprema-flip-prednja p {
     margin: 0;
     font-size: 18px;
     line-height: 1.75;
     color: #444;
+}
+
+.oprema-flip-straznja {
+    background: #ddd;
+    transform: rotateY(180deg);
+}
+
+.oprema-flip-straznja img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
 }
 
 @media (max-width: 1000px) {
@@ -1782,17 +1819,21 @@ body {
         gap: 20px;
     }
 
-    .oprema-kartica {
-        min-height: auto;
+    .oprema-flip-kartica {
+        height: 250px;
+    }
+
+    .oprema-flip-prednja {
         padding: 30px 24px;
     }
 
-    .oprema-kartica h2 {
+    .oprema-flip-prednja h2 {
         font-size: 23px;
     }
 
-    .oprema-kartica p {
+    .oprema-flip-prednja p {
         font-size: 17px;
+        line-height: 1.65;
     }
 }
 
