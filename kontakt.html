@@ -45,7 +45,7 @@
             <div class="kontakt-lijevo">
 
                 <p class="kontakt-oznaka" data-i18n="kontakt_vlasnik">
-                    PRODAJA PUTEM AGENCIJE
+                    IZRAVNO OD VLASNIKA
                 </p>
 
                 <h2 data-i18n="kontakt_zainteresirani">
@@ -69,18 +69,57 @@
             <div class="kontakt-desno">
 
                 <div class="kontakt-podatak">
-                    <span data-i18n="kontakt_telefon">TELEFON</span>
-                    <a href="#" class="kontakt-broj" onclick="nazovi(event)">098 374 977</a>
+
+                    <span data-i18n="kontakt_telefon">
+                        TELEFON
+                    </span>
+
+                    <a href="#"
+                       class="kontakt-broj"
+                       onclick="nazovi(event)">
+                        092 / 154 - 8852
+                    </a>
+
                 </div>
 
+
                 <div class="kontakt-podatak">
-                    <span data-i18n="kontakt_provizija_naslov">AGENCIJSKA PROVIZIJA</span>
-                    <h3 data-i18n="kontakt_provizija">Kupac ne plaća agencijsku proviziju.</h3>
+
+                    <span data-i18n="kontakt_dostupnost">
+                        DOSTUPNOST
+                    </span>
+
+                    <h3 data-i18n="kontakt_radni_dani">
+                        Radnim danom poslije 16 sati
+                    </h3>
+
+                    <p data-i18n="kontakt_vikend">
+                        Vikendom prema dogovoru.
+                    </p>
+
+                </div>
+
+
+                <div class="kontakt-podatak">
+
+                    <span data-i18n="kontakt_razgledavanje">
+                        RAZGLEDAVANJE
+                    </span>
+
+                    <h3 data-i18n="kontakt_prema_dogovoru">
+                        Prema prethodnom dogovoru
+                    </h3>
+
+                    <p data-i18n="kontakt_termin">
+                        Molimo da termin razgledavanja dogovorimo unaprijed.
+                    </p>
+
                 </div>
 
             </div>
 
         </div>
+
 
         <!-- POZIV NA KONTAKT -->
 
@@ -122,13 +161,16 @@
                 HAPPY PLACE
             </p>
 
-            <h2 data-i18n="kontakt_nazovite">Nazovite nas</h2>
+            <h2>Nazovite nas</h2>
 
             <p class="telefon-popup-broj">
-                098 374 977
+                092 / 154 - 8852
             </p>
 
-            <p data-i18n="kontakt_provizija">Kupac ne plaća agencijsku proviziju.</p>
+            <p>
+                Radnim danom poslije 16 sati.<br>
+                Vikendom prema dogovoru.
+            </p>
 
         </div>
 
@@ -149,7 +191,7 @@
 
             if (jeMobitel) {
 
-                window.location.href = "tel:+38598374977";
+                window.location.href = "tel:+385921548852";
 
             } else {
 
