@@ -21,7 +21,7 @@ const translations = {
         podatak_udaljenost: "8 km od centra Virovitice",
         podatak_cijena: "Cijena",
 
-        podatak_vlasnik: "Prodaje agencija bez naknade za kupca",
+        podatak_vlasnik: "Prodaje vlasnik, bez tereta, uredna dokumentacija",
 
         podatak_zamjena: "Moguća zamjena",
         podatak_stanovi: "Noviji manji stan",
@@ -400,7 +400,7 @@ const translations = {
         podatak_udaljenost: "8 km from the centre of Virovitica",
         podatak_cijena: "Price",
 
-        podatak_vlasnik: "Sold through an agency – no fee for the buyer",
+        podatak_vlasnik: "Owner selling directly. No liens or encumbrances. Clear title and complete documentation.",
 
         podatak_zamjena: "Property exchange possible",
         podatak_stanovi: "Newer smaller apartment",
@@ -779,7 +779,7 @@ const translations = {
         podatak_udaljenost: "8 km vom Zentrum von Virovitica entfernt",
         podatak_cijena: "Preis",
 
-        podatak_vlasnik: "Verkauf über eine Agentur – keine Gebühr für den Käufer",
+        podatak_vlasnik: "Verkauf durch den Eigentümer, lastenfrei, vollständige und ordnungsgemäße Unterlagen",
 
         podatak_zamjena: "Immobilientausch möglich",
         podatak_stanovi: "Neuere kleinere Wohnung",
