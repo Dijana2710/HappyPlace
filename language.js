@@ -6,10 +6,14 @@ const translations = {
 
     hr: {
 
+        // =========================
         // POČETNA
+        // =========================
+
         menu_pocetna: "Početna",
         menu_o_kuci: "O kući",
         menu_lokacija: "Lokacija",
+        menu_opcina: "O općini Špišić Bukovica",
         menu_galerija: "Galerija",
         menu_zamjena: "Zamjena",
         menu_kontakt: "Kontakt",
@@ -371,9 +375,134 @@ const translations = {
             "Nekretnine koje se nalaze u neposrednoj blizini željezničke pruge, kao ni nekretnine oko i s druge strane željezničke pruge u odnosu na centar grada, ne možemo razmatrati.",
 
         zamjena_zavrsno:
-            "Kod stanova tražimo noviju gradnju i urednu dokumentaciju. Otvoreni smo za ozbiljne prijedloge ako postoji obostrani interes i mogućnost dogovora."
-    },
+            "Kod stanova tražimo noviju gradnju i urednu dokumentaciju. Otvoreni smo za ozbiljne prijedloge ako postoji obostrani interes i mogućnost dogovora.",
 
+
+        // =====================================================
+        // O OPĆINI ŠPIŠIĆ BUKOVICA
+        // =====================================================
+
+        opcina_naslov:
+            "O općini Špišić Bukovica",
+
+        opcina_podnaslov:
+            "Uređena zajednica nadomak Virovitice – mir, priroda i sadržaji za svakodnevni život.",
+
+        opcina_oznaka:
+            "MJESTO ZA ŽIVOT",
+
+        opcina_uvod_naslov:
+            "Mir manjeg mjesta, a grad nadohvat ruke",
+
+        opcina_uvod_tekst:
+            "Špišić Bukovica smještena je svega 8 km od Virovitice. Uređeno mjesto, dostupnost svakodnevnih usluga, pješačke površine, mogućnosti rekreacije i aktivna lokalna zajednica čine ga ugodnim mjestom za život tijekom cijele godine.",
+
+
+        // ZIDINE
+
+        opcina_zidine_oznaka:
+            "PRIRODA I REKREACIJA",
+
+        opcina_zidine_naslov:
+            "Zidine – šetnja, priroda i ribolov",
+
+        opcina_zidine_tekst:
+            "Retencija Zidine, među stanovnicima poznata i kao Brana, pruža mogućnosti za boravak u prirodi, rekreaciju i sportski ribolov. Oko područja uređena je poučna staza koja dodatno obogaćuje mogućnosti za šetnju i odmor.",
+
+
+        // ŠETNICE I BICIKLIZAM
+
+        opcina_setnice_oznaka:
+            "AKTIVAN ŽIVOT",
+
+        opcina_setnice_naslov:
+            "Šetnice, nogostupi i biciklističke rute",
+
+        opcina_setnice_tekst:
+            "Općina kontinuirano ulaže u prometnu i rekreacijsku infrastrukturu. Uz uređene pješačke površine, područjem prolaze biciklističke rute poput Podravskog kruga, dok širim područjem općine prolaze i druge panonske i dravske biciklističke trase.",
+
+
+        // HOTEL MOZART
+
+        opcina_mozart_oznaka:
+            "GASTRONOMIJA I TURIZAM",
+
+        opcina_mozart_naslov:
+            "Hotel Mozart",
+
+        opcina_mozart_tekst:
+            "U Špišić Bukovici nalazi se Hotel Mozart s četiri zvjezdice. U općinskim dokumentima ističu se njegova gastronomska i turistička ponuda te položaj u prirodnom okruženju Bilogore.",
+
+
+        // VJERSKI ŽIVOT
+
+        opcina_vjera_naslov:
+            "Bogat vjerski i tradicijski život",
+
+        opcina_vjera_tekst:
+            "Župa sv. Ivana Krstitelja ima dugu tradiciju. Blagdan sv. Ivana 24. lipnja snažno je povezan s Danom Općine i tradicijom Ivanja. U mjestu djeluje i adventistička crkva, što dodatno govori o raznolikosti vjerskog života.",
+
+
+        // KULTURA I ZAJEDNICA
+
+        opcina_kultura_naslov:
+            "Aktivna i povezana zajednica",
+
+        opcina_kultura_tekst:
+            "Dan Općine – Ivanje, tradicionalni ivanjski krijesovi, sportska i ribolovna događanja te brojne udruge stvaraju živ društveni život. Na području općine djeluju sportske, kulturne, vatrogasne, ribolovne i druge udruge.",
+
+
+        // BRZA CESTA
+
+        opcina_cesta_oznaka:
+            "PROMETNA POVEZANOST",
+
+        opcina_cesta_naslov:
+            "Nova brza cesta prema Virovitici",
+
+        opcina_cesta_tekst:
+            "Nova dionica brze ceste na pravcu Špišić Bukovica – Virovitica dodatno poboljšava prometnu povezanost. Pravac je dio većeg projekta povezivanja Virovitice preko Bjelovara prema Zagrebu, a preostale dionice dovršavaju se etapno.",
+
+
+        // BENZINSKA I SADRŽAJI
+
+        opcina_pumpa_naslov:
+            "Svakodnevne usluge u blizini",
+
+        opcina_pumpa_tekst:
+            "Uz trgovine, poštu, ljekarnu, ambulantu i autobusnu stanicu, u blizini se nalazi i benzinska postaja. Za veće kupovine i dodatne sadržaje Virovitica je udaljena svega nekoliko minuta vožnje.",
+
+
+        // UREĐENA ZAJEDNICA
+
+        opcina_uredjena_naslov:
+            "Uređena zajednica",
+
+        opcina_uredjena_tekst:
+            "Špišić Bukovica spaja uređeno mjesto, lokalne sadržaje, prirodu i blizinu grada. Ovdje se svakodnevni život može odvijati mirnijim ritmom, uz vrlo dobru povezanost s Viroviticom.",
+
+
+        // ZAKLJUČAK
+
+        opcina_zakljucak_naslov:
+            "Mir kod kuće. Priroda oko vas. Grad na nekoliko minuta.",
+
+        opcina_zakljucak_tekst:
+            "Happy Place nalazi se u Špišić Bukovici – svega 8 km od centra Virovitice, u zajednici koja pruža dobar spoj mirnog stanovanja, prirode, rekreacije i svakodnevnih sadržaja.",
+
+        opcina_pogledaj_lokaciju:
+            "Pogledaj lokaciju kuće",
+
+        opcina_izvor:
+            "Izvor i fotografija",
+
+        opcina_fotografija:
+            "Fotografija",
+
+        opcina_vise:
+            "Saznaj više",
+
+    },
 
     // =========================
     // ENGLISH
@@ -381,14 +510,19 @@ const translations = {
 
     en: {
 
+        // =========================
+        // HOME
+        // =========================
+
         menu_pocetna: "Home",
         menu_o_kuci: "About the House",
         menu_lokacija: "Location",
+        menu_opcina: "About Špišić Bukovica",
         menu_galerija: "Gallery",
         menu_zamjena: "Exchange",
         menu_kontakt: "Contact",
 
-        pocetna_slogan: "My little corner of the universe",
+        pocetna_slogan: "My little piece of the universe",
         brojac_posjete: "Visits:",
 
         podatak_lokacija: "Location",
@@ -396,178 +530,483 @@ const translations = {
         podatak_cijena: "Price",
 
         podatak_vlasnik:
-            "Owner selling directly. No liens or encumbrances. Clear title and complete documentation.",
+            "Sold directly by the owner, free of liens, clear documentation",
 
-        podatak_zamjena: "Property exchange possible",
+        podatak_zamjena: "Exchange possible",
         podatak_stanovi: "Newer smaller apartment",
         podatak_koprivnica: "with additional payment",
 
+
+        // =========================
+        // COMMON
+        // =========================
+
         back: "← Back",
 
-        okuci_naslov: "About the House",
-        okuci_podnaslov:
-            "A new, beautifully finished and modernly equipped turnkey home",
-        okuci_osnovni: "Property Details",
-        okuci_raspored: "Layout",
-        okuci_oprema: "Heating and Equipment",
-        okuci_pomocni: "Auxiliary Buildings",
-        okuci_okucnica: "Outdoor Area",
-        okuci_video: "Video Gallery",
 
-        nova_oprema_naslov: "Heating and Equipment",
+        // =========================
+        // ABOUT THE HOUSE
+        // =========================
+
+        okuci_naslov: "About the House",
+
+        okuci_podnaslov:
+            "A new, quality-finished and modernly equipped turnkey house",
+
+        okuci_osnovni: "Basic information",
+        okuci_raspored: "Layout",
+        okuci_oprema: "Heating and equipment",
+        okuci_pomocni: "Auxiliary buildings",
+        okuci_okucnica: "Outdoor area",
+        okuci_video: "Video gallery",
+
+
+        // =========================
+        // HEATING AND EQUIPMENT
+        // =========================
+
+        nova_oprema_naslov: "Heating and equipment",
+
         nova_oprema_podnaslov:
             "Comfort, quality and practicality throughout the year",
-        nova_oprema_podno_naslov: "♨ Underfloor Heating",
+
+        nova_oprema_podno_naslov:
+            "♨ Underfloor heating",
+
         nova_oprema_podno_opis:
-            "Gas underfloor heating is installed throughout the entire house, providing even and comfortable warmth in every room.",
-        nova_oprema_klima_naslov: "❄ Air Conditioning",
+            "Gas underfloor heating is installed throughout the entire floor plan of the house, providing even and pleasant warmth in all rooms.",
+
+        nova_oprema_klima_naslov:
+            "❄ Air conditioning",
+
         nova_oprema_klima_opis:
-            "The house is equipped with two Bosch inverter air-conditioning units adapted to the size and layout of the property.",
-        nova_oprema_rekuperacija_naslov: "↻ Smart Ventilation",
+            "The house is equipped with two Bosch inverter air-conditioning units suited to the size and layout of the property.",
+
+        nova_oprema_rekuperacija_naslov:
+            "↻ Smart heat recovery ventilation",
+
         nova_oprema_rekuperacija_opis:
-            "The heat-recovery ventilation system provides continuous air exchange and contributes to a more comfortable indoor climate.",
-        nova_oprema_stolarija_naslov: "▣ Windows and Doors",
+            "The heat recovery ventilation system provides continuous air exchange and contributes to a more pleasant indoor climate.",
+
+        nova_oprema_stolarija_naslov:
+            "▣ Windows and doors",
+
         nova_oprema_stolarija_opis:
             "High-quality TROHA-DIL windows and doors with triple glazing, roller shutters and insect screens.",
-        nova_oprema_izolacija_naslov: "⌂ Insulation",
-        nova_oprema_izolacija_opis:
-            "The house is thoroughly insulated from the foundations to the roof, with thermal façade insulation and carefully finished surfaces.",
-        nova_oprema_uredaji_naslov: "✓ Equipment",
-        nova_oprema_uredaji_opis:
-            "The house is sold fully furnished and equipped, including Bosch appliances, and is ready to move into.",
 
-        kontakt_naslov: "Contact",
+        nova_oprema_izolacija_naslov:
+            "⌂ Insulation",
+
+        nova_oprema_izolacija_opis:
+            "The house is well insulated from the foundations to the roof, with a thermal façade and carefully finished exterior layers.",
+
+        nova_oprema_uredaji_naslov:
+            "✓ Equipment",
+
+        nova_oprema_uredaji_opis:
+            "The house is sold fully furnished and equipped, including Bosch appliances – ready to move into.",
+
+
+        // =========================
+        // CONTACT
+        // =========================
+
+        kontakt_naslov:
+            "Contact",
+
         kontakt_uvod:
-            "For additional information or to arrange a viewing, feel free to contact us.",
+            "For additional information or to arrange a viewing, please feel free to contact us.",
 
         kontakt_vlasnik:
-            "DIRECTLY FROM THE OWNER",
+            "DIRECT FROM THE OWNER",
 
         kontakt_zainteresirani:
             "Interested in the property?",
-        kontakt_pitanja:
-            "We will be happy to answer any additional questions and arrange a property viewing by prior agreement.",
-        kontakt_dokumentacija:
-            "Serious prospective buyers can be provided with access to relevant documentation, the land registry extract and utility bills.",
-        kontakt_telefon: "PHONE",
-        kontakt_vise: "Would you like to know more?",
-        kontakt_dogovorimo: "Let's arrange a viewing.",
-        kontakt_nazovite: "Call us",
 
-        lokacija_naslov: "Location",
-        lokacija_podnaslov: "A peaceful location near Virovitica",
-        lokacija_udaljenost: "8 km from the centre of Virovitica",
+        kontakt_pitanja:
+            "We will be happy to answer any additional questions and arrange a property viewing by appointment.",
+
+        kontakt_dokumentacija:
+            "Serious prospective buyers may be provided with access to relevant documentation, the land registry extract and utility cost records.",
+
+        kontakt_telefon:
+            "PHONE",
+
+        kontakt_vise:
+            "Would you like to know more?",
+
+        kontakt_dogovorimo:
+            "Arrange a viewing.",
+
+        kontakt_nazovite:
+            "Call us",
+
+
+        // =========================
+        // LOCATION
+        // =========================
+
+        lokacija_naslov:
+            "Location",
+
+        lokacija_podnaslov:
+            "A peaceful place near Virovitica",
+
+        lokacija_udaljenost:
+            "8 km from the centre of Virovitica",
+
         lokacija_glavni_naslov:
-            "Everything you need for everyday life is close at hand.",
+            "Everything you need for everyday life is within easy reach.",
+
         lokacija_opis:
-            "The property is located in the municipality of Špišić Bukovica, only 8 km from the centre of Virovitica, combining peaceful living with very good access to everyday amenities.",
-        lokacija_100m: "about 100 m",
-        lokacija_blizina_naslov: "Within immediate reach",
+            "The property is located in the municipality of Špišić Bukovica, only 8 km from the centre of Virovitica, in a location that combines peaceful living with very good access to everyday amenities.",
+
+        lokacija_100m:
+            "about 100 m",
+
+        lokacija_blizina_naslov:
+            "In the immediate vicinity",
+
         lokacija_blizina_opis:
             "Medical clinic, pharmacy, post office, shops, butcher's shop and bus stop.",
-        lokacija_700m: "up to 700 m",
-        lokacija_minute_naslov: "Only a few minutes away",
-        lokacija_minute_opis:
-            "Primary school, kindergarten and church, connected by well-maintained pedestrian paths.",
-        lokacija_karta: "View location on the map",
-        lokacija_napomena:
-            "The exact location of the property is available to serious prospective buyers when arranging a viewing.",
 
-        okucnica_naslov: "Outdoor Area",
+        lokacija_700m:
+            "within 700 m",
+
+        lokacija_minute_naslov:
+            "Just a few minutes away",
+
+        lokacija_minute_opis:
+            "Primary school, kindergarten and church, connected by maintained pedestrian paths.",
+
+        lokacija_karta:
+            "View location on the map",
+
+        lokacija_napomena:
+            "The exact property location is available to serious prospective buyers when arranging a viewing.",
+
+
+        // =========================
+        // OUTDOOR AREA
+        // =========================
+
+        okucnica_naslov:
+            "Outdoor Area",
+
         okucnica_podnaslov:
-            "A landscaped, fenced and functional outdoor space on a total plot of 1,630 m².",
-        okucnica_uredjena_naslov: "Fully Landscaped Outdoor Area",
+            "A landscaped, fenced and functional outdoor area on a total plot of 1,630 m².",
+
+        okucnica_uredjena_naslov:
+            "Fully landscaped outdoor area",
+
         okucnica_uredjena_opis:
-            "The outdoor area is fully landscaped and fenced, providing privacy, security and a pleasant space to enjoy throughout the year.",
-        okucnica_asfalt_naslov: "Paved Driveway and Parking",
+            "The outdoor area is fully landscaped and fenced, providing privacy, security and a pleasant space for outdoor living throughout the year.",
+
+        okucnica_asfalt_naslov:
+            "Asphalt driveway and parking",
+
         okucnica_asfalt_opis:
-            "The paved driveway provides practical and safe access as well as plenty of space for parking vehicles.",
-        okucnica_gredice_naslov: "Raised Garden Beds",
+            "The asphalted part of the property provides practical and safe access as well as ample parking space.",
+
+        okucnica_gredice_naslov:
+            "Raised garden beds",
+
         okucnica_gredice_opis:
             "Raised garden beds provide a practical space for growing your own vegetables and herbs.",
-        okucnica_cvijece_naslov: "Flower Oases",
+
+        okucnica_cvijece_naslov:
+            "Flower-filled corners",
+
         okucnica_cvijece_opis:
-            "Flower details and landscaped green areas bring warmth, colour and a special atmosphere to the outdoor space.",
-        okucnica_vocke_naslov: "Green Areas and Fruit Trees",
+            "Flower details and landscaped green areas give the garden warmth, colour and a special atmosphere.",
+
+        okucnica_vocke_naslov:
+            "Green areas and fruit trees",
+
         okucnica_vocke_opis:
-            "Spacious green areas and planted fruit trees create a natural and pleasant setting for spending time outdoors.",
-        okucnica_tlaka_naslov: "Paved Paths and Areas",
+            "Spacious green areas and planted fruit trees create a natural and pleasant outdoor environment.",
+
+        okucnica_tlaka_naslov:
+            "Paved paths and surfaces",
+
         okucnica_tlaka_opis:
-            "Paved areas connect the house with the garden and make the outdoor space practical and easy to use.",
-        okucnica_zen_naslov: "Relaxing Zen Corner",
+            "Paved areas connect the house and garden and make the outdoor space easy and tidy to use.",
+
+        okucnica_zen_naslov:
+            "A peaceful corner for relaxation",
+
         okucnica_zen_opis:
-            "A peaceful corner of the garden provides the perfect place to rest, relax and enjoy the outdoors.",
+            "A quiet part of the garden offers a place to rest, relax and enjoy the outdoors.",
+
         okucnica_footer:
             "A place where the comfort of home continues outdoors.",
 
-        osnovni_naslov: "Property Details",
-        osnovni_podnaslov:
-            "Happy Place — My little corner of the universe",
-        osnovni_opis1:
-            "We are selling a new, fully finished and furnished family home with a gross area of 134 m², featuring a modern and functional layout and located only 8 km from the centre of Virovitica, in the heart of the municipality of Špišić Bukovica. The house is situated on a 1,630 m² plot.",
-        osnovni_opis2:
-            "The house is sold on a turnkey basis, including furniture and equipment, with no additional investment required. It is thoroughly insulated from the foundations to the roof, air-conditioned, equipped with underfloor heating and smart heat-recovery ventilation, while the house, auxiliary buildings and entire outdoor area are fully finished, fenced and landscaped with asphalt, paving and green areas.",
-        osnovni_dokumentacija:
-            "The documentation is in order, the property is free of encumbrances, and purchase through a housing loan is possible.",
-        osnovni_opis3:
-            "We have lived in the house for a little over four years, during which time we continued to improve and equip it. We are selling the house due to a change in lifestyle and our wish to live in an apartment.",
 
-        pomocni_naslov: "Auxiliary Buildings",
+        // =========================
+        // BASIC INFORMATION
+        // =========================
+
+        osnovni_naslov:
+            "Basic Information",
+
+        osnovni_podnaslov:
+            "Happy Place — My little piece of the universe",
+
+        osnovni_opis1:
+            "We are selling a new, fully finished and furnished family house with a gross area of 134 m², featuring a modern and functional layout, located only 8 km from the centre of Virovitica, in the heart of the municipality of Špišić Bukovica. The house stands on a 1,630 m² plot.",
+
+        osnovni_opis2:
+            "The house is sold on a turnkey basis – including furniture and equipment, with no need for additional investment. It is well insulated from the foundations to the roof, air-conditioned and equipped with underfloor heating and smart heat recovery ventilation. The house, auxiliary buildings and entire garden are completed, fenced and landscaped with asphalt, paving and green areas.",
+
+        osnovni_dokumentacija:
+            "The documentation is in order, the property is free of liens and purchase through a housing loan is possible.",
+
+        osnovni_opis3:
+            "We have lived in the house for just over four years, during which time we continued to improve and equip it. We are selling because of a change in lifestyle and our wish to live in an apartment.",
+
+
+        // =========================
+        // AUXILIARY BUILDINGS
+        // =========================
+
+        pomocni_naslov:
+            "Auxiliary Buildings",
+
         pomocni_podnaslov:
-            "Garage, basement, storage room and workshop",
-        pomocni_dodatni: "ADDITIONAL SPACE",
+            "Garage, cellar, storage room and workshop",
+
+        pomocni_dodatni:
+            "ADDITIONAL SPACE",
+
         pomocni_garaza_naslov:
-            "Garage, Storage Room and Basement",
+            "Garage, storage room and cellar",
+
         pomocni_garaza_opis1:
-            "Physically separate auxiliary spaces are located next to the main house. The garage, storage room and basement together provide functional additional space for a vehicle, storage and other needs.",
+            "Physically separate auxiliary rooms are located next to the main house. The garage, storage room and cellar together provide functional additional space for a vehicle, storage and other needs.",
+
         pomocni_garaza_opis2:
-            "The garage is equipped with an automatic motorised door with remote control, and a basement is located underneath it.",
-        pomocni_prakticno: "PRACTICAL AND SEPARATE",
-        pomocni_radionica_naslov: "Separate Workshop",
+            "The garage is equipped with automatic motorised doors and remote control, with a cellar located beneath it.",
+
+        pomocni_prakticno:
+            "PRACTICAL AND SEPARATE",
+
+        pomocni_radionica_naslov:
+            "Separate workshop",
+
         pomocni_radionica_opis1:
-            "Opposite the garage is a fully finished workshop equipped with a wood-burning stove.",
+            "Opposite the garage is a fully finished workshop with a wood-burning stove.",
+
         pomocni_radionica_opis2:
             "The space is physically separate from the main house and ready for immediate use.",
-        pomocni_radionica_opis3:
-            "All auxiliary rooms have the same thermal façade insulation as the house, tiled floors and an electricity connection.",
-        pomocni_okucnica: "OUTDOOR AREA",
-        pomocni_vrt_naslov: "Space for Outdoor Living",
-        pomocni_vrt_opis:
-            "The landscaped and fenced outdoor area provides plenty of space for relaxation, gardening, socialising and various outdoor activities.",
 
-        raspored_naslov: "House Layout",
+        pomocni_radionica_opis3:
+            "All auxiliary rooms have the same thermal façade as the house, tiled floors and an electricity connection.",
+
+        pomocni_okucnica:
+            "OUTDOOR AREA",
+
+        pomocni_vrt_naslov:
+            "Space for outdoor living",
+
+        pomocni_vrt_opis:
+            "The landscaped and fenced garden offers plenty of space for relaxation, gardening, socialising and various outdoor activities.",
+
+
+        // =========================
+        // LAYOUT
+        // =========================
+
+        raspored_naslov:
+            "House Layout",
+
         raspored_podnaslov:
             "A spacious and functional home for everyday living and work",
-        raspored_spavace: "bedrooms",
-        raspored_kupaonica: "bathroom",
-        raspored_tehnicka: "utility room",
-        raspored_smocnica: "pantry",
-        raspored_open: "Open-plan",
+
+        raspored_spavace:
+            "bedrooms",
+
+        raspored_kupaonica:
+            "bathroom",
+
+        raspored_tehnicka:
+            "utility room",
+
+        raspored_smocnica:
+            "pantry",
+
+        raspored_open:
+            "Open-plan",
+
         raspored_dnevni:
             "living room, dining area and kitchen",
-        raspored_tavan: "Attic",
+
+        raspored_tavan:
+            "Attic",
+
         raspored_tavan_opis:
             "access from the utility room",
-        raspored_opis:
-            "The central living area was intentionally designed to be spacious, providing plenty of room not only for everyday family life, but also for comfortable socialising, celebrations and larger gatherings.",
 
-        zamjena_mogucnost: "OPEN TO AGREEMENT",
-        zamjena_naslov: "Property Exchange",
+        raspored_opis:
+            "The central living area was intentionally designed to be spacious so that, in addition to everyday family life, it provides plenty of room for comfortable gatherings, celebrations and larger get-togethers.",
+
+
+        // =========================
+        // EXCHANGE
+        // =========================
+
+        zamjena_mogucnost:
+            "POSSIBILITY OF AGREEMENT",
+
+        zamjena_naslov:
+            "Exchange",
+
         zamjena_podnaslov:
-            "Exchange for a smaller, newer apartment with an additional payment is possible.",
+            "Possible exchange for a smaller, newer apartment with an additional payment.",
+
         zamjena_glavni_naslov:
-            "Exchange for a smaller, newer apartment with an additional payment",
-        zamjena_vazan_uvjet: "IMPORTANT REQUIREMENT",
+            "Possible exchange for a smaller, newer apartment with an additional payment",
+
+        zamjena_vazan_uvjet:
+            "IMPORTANT CONDITION",
+
         zamjena_lokacija_naslov:
             "Location is especially important to us",
-        zamjena_lokacija_opis1:
-            "Preference is given to properties in larger cities, as close as possible to the city centre and as far as possible from the railway line.",
-        zamjena_lokacija_opis2:
-            "We are unable to consider properties located in the immediate vicinity of the railway line, or properties situated around or on the opposite side of the railway line in relation to the city centre.",
-        zamjena_zavrsno:
-            "For apartments, we are looking for newer construction with proper documentation. We are open to serious proposals where there is mutual interest and room for agreement."
-    },
 
+        zamjena_lokacija_opis1:
+            "Preference is given to properties in larger towns and cities, as close to the centre as possible and as far from the railway line as possible.",
+
+        zamjena_lokacija_opis2:
+            "We cannot consider properties located directly next to the railway line, nor properties situated around or on the opposite side of the railway line in relation to the town centre.",
+
+        zamjena_zavrsno:
+            "For apartments, we are looking for newer construction and clear documentation. We are open to serious proposals where there is mutual interest and room for agreement.",
+
+
+        // =====================================================
+        // ABOUT ŠPIŠIĆ BUKOVICA
+        // =====================================================
+
+        opcina_naslov:
+            "About Špišić Bukovica",
+
+        opcina_podnaslov:
+            "A well-kept community near Virovitica – peace, nature and everyday amenities.",
+
+        opcina_oznaka:
+            "A PLACE TO LIVE",
+
+        opcina_uvod_naslov:
+            "The peace of a smaller community with the city close at hand",
+
+        opcina_uvod_tekst:
+            "Špišić Bukovica is located only 8 km from Virovitica. A well-kept environment, access to everyday services, pedestrian areas, recreational opportunities and an active local community make it a pleasant place to live throughout the year.",
+
+
+        // ZIDINE
+
+        opcina_zidine_oznaka:
+            "NATURE AND RECREATION",
+
+        opcina_zidine_naslov:
+            "Zidine – walking, nature and fishing",
+
+        opcina_zidine_tekst:
+            "The Zidine retention lake, locally also known as Brana, offers opportunities for spending time in nature, recreation and sport fishing. An educational trail has been developed around the area, providing additional opportunities for walking and relaxation.",
+
+
+        // WALKING AND CYCLING
+
+        opcina_setnice_oznaka:
+            "ACTIVE LIFESTYLE",
+
+        opcina_setnice_naslov:
+            "Walking paths, pavements and cycling routes",
+
+        opcina_setnice_tekst:
+            "The municipality continues to invest in transport and recreational infrastructure. In addition to maintained pedestrian areas, cycling routes such as the Podravina Circle pass through the area, while wider Panonian and Drava cycling routes also cross the municipality.",
+
+
+        // HOTEL MOZART
+
+        opcina_mozart_oznaka:
+            "GASTRONOMY AND TOURISM",
+
+        opcina_mozart_naslov:
+            "Hotel Mozart",
+
+        opcina_mozart_tekst:
+            "Špišić Bukovica is home to the four-star Hotel Mozart. Municipal documents highlight its gastronomic and tourist offer as well as its location in the natural surroundings of Bilogora.",
+
+
+        // RELIGIOUS LIFE
+
+        opcina_vjera_naslov:
+            "Rich religious and traditional life",
+
+        opcina_vjera_tekst:
+            "The Parish of St John the Baptist has a long tradition. The feast of St John on 24 June is closely connected with the Municipality Day and the traditional Ivanje celebrations. An Adventist church also operates in the community, reflecting the diversity of local religious life.",
+
+
+        // CULTURE AND COMMUNITY
+
+        opcina_kultura_naslov:
+            "An active and connected community",
+
+        opcina_kultura_tekst:
+            "Municipality Day – Ivanje, traditional midsummer bonfires, sports and fishing events and numerous associations create a lively social life. Sports, cultural, volunteer fire brigade, fishing and other associations are active throughout the municipality.",
+
+
+        // EXPRESS ROAD
+
+        opcina_cesta_oznaka:
+            "TRANSPORT CONNECTIONS",
+
+        opcina_cesta_naslov:
+            "New express road towards Virovitica",
+
+        opcina_cesta_tekst:
+            "The new express road section on the Špišić Bukovica – Virovitica route further improves transport connections. The route is part of the larger project to connect Virovitica via Bjelovar towards Zagreb, with the remaining sections being completed in stages.",
+
+
+        // FUEL STATION AND AMENITIES
+
+        opcina_pumpa_naslov:
+            "Everyday services nearby",
+
+        opcina_pumpa_tekst:
+            "In addition to shops, a post office, pharmacy, medical clinic and bus stop, a fuel station is also located nearby. For larger shopping trips and additional amenities, Virovitica is only a few minutes away by car.",
+
+
+        // WELL-KEPT COMMUNITY
+
+        opcina_uredjena_naslov:
+            "A well-kept community",
+
+        opcina_uredjena_tekst:
+            "Špišić Bukovica combines a well-maintained environment, local amenities, nature and proximity to the city. Everyday life can move at a calmer pace here while maintaining very good connections with Virovitica.",
+
+
+        // CONCLUSION
+
+        opcina_zakljucak_naslov:
+            "Peace at home. Nature around you. The city just minutes away.",
+
+        opcina_zakljucak_tekst:
+            "Happy Place is located in Špišić Bukovica – only 8 km from the centre of Virovitica, in a community that offers a good combination of peaceful living, nature, recreation and everyday amenities.",
+
+        opcina_pogledaj_lokaciju:
+            "View the house location",
+
+        opcina_izvor:
+            "Source and photograph",
+
+        opcina_fotografija:
+            "Photograph",
+
+        opcina_vise:
+            "Learn more",
+
+    },
 
     // =========================
     // DEUTSCH
@@ -575,74 +1014,123 @@ const translations = {
 
     de: {
 
+        // =========================
+        // STARTSEITE
+        // =========================
+
         menu_pocetna: "Startseite",
         menu_o_kuci: "Über das Haus",
         menu_lokacija: "Lage",
+        menu_opcina: "Über Špišić Bukovica",
         menu_galerija: "Galerie",
         menu_zamjena: "Tausch",
         menu_kontakt: "Kontakt",
 
-        pocetna_slogan:
-            "Mein kleiner Teil des Universums",
+        pocetna_slogan: "Mein kleines Stück Universum",
         brojac_posjete: "Besuche:",
 
         podatak_lokacija: "Lage",
-        podatak_udaljenost:
-            "8 km vom Zentrum von Virovitica entfernt",
+        podatak_udaljenost: "8 km vom Zentrum von Virovitica",
         podatak_cijena: "Preis",
 
         podatak_vlasnik:
-            "Verkauf durch den Eigentümer, lastenfrei, vollständige und ordnungsgemäße Unterlagen",
+            "Direktverkauf durch den Eigentümer, lastenfrei, vollständige Unterlagen",
 
-        podatak_zamjena:
-            "Immobilientausch möglich",
-        podatak_stanovi:
-            "Neuere kleinere Wohnung",
-        podatak_koprivnica:
-            "mit Zuzahlung",
+        podatak_zamjena: "Tausch möglich",
+        podatak_stanovi: "Neuere kleinere Wohnung",
+        podatak_koprivnica: "mit Zuzahlung",
+
+
+        // =========================
+        // GEMEINSAM
+        // =========================
 
         back: "← Zurück",
 
-        okuci_naslov: "Über das Haus",
+
+        // =========================
+        // ÜBER DAS HAUS
+        // =========================
+
+        okuci_naslov:
+            "Über das Haus",
+
         okuci_podnaslov:
-            "Ein neues, hochwertig ausgestattetes und modern eingerichtetes schlüsselfertiges Haus",
-        okuci_osnovni: "Grunddaten",
-        okuci_raspored: "Raumaufteilung",
-        okuci_oprema: "Heizung und Ausstattung",
-        okuci_pomocni: "Nebengebäude",
-        okuci_okucnica: "Außenbereich",
-        okuci_video: "Videogalerie",
+            "Neues, hochwertig ausgestattetes und modern eingerichtetes Haus – schlüsselfertig",
+
+        okuci_osnovni:
+            "Grunddaten",
+
+        okuci_raspored:
+            "Raumaufteilung",
+
+        okuci_oprema:
+            "Heizung und Ausstattung",
+
+        okuci_pomocni:
+            "Nebengebäude",
+
+        okuci_okucnica:
+            "Außenbereich",
+
+        okuci_video:
+            "Videogalerie",
+
+
+        // =========================
+        // HEIZUNG UND AUSSTATTUNG
+        // =========================
 
         nova_oprema_naslov:
             "Heizung und Ausstattung",
+
         nova_oprema_podnaslov:
             "Komfort, Qualität und Funktionalität das ganze Jahr über",
+
         nova_oprema_podno_naslov:
             "♨ Fußbodenheizung",
+
         nova_oprema_podno_opis:
-            "Im gesamten Haus ist eine Gas-Fußbodenheizung installiert, die in allen Räumen für gleichmäßige und angenehme Wärme sorgt.",
+            "Im gesamten Haus ist eine gasbetriebene Fußbodenheizung installiert, die in allen Räumen für eine gleichmäßige und angenehme Wärme sorgt.",
+
         nova_oprema_klima_naslov:
             "❄ Klimaanlage",
+
         nova_oprema_klima_opis:
-            "Das Haus ist mit zwei Bosch-Inverter-Klimaanlagen ausgestattet, die an die Größe und Raumaufteilung angepasst sind.",
+            "Das Haus ist mit zwei Bosch-Inverter-Klimaanlagen ausgestattet, die an die Größe und Raumaufteilung des Hauses angepasst sind.",
+
         nova_oprema_rekuperacija_naslov:
-            "↻ Kontrollierte Wohnraumlüftung",
+            "↻ Intelligente Wärmerückgewinnung",
+
         nova_oprema_rekuperacija_opis:
-            "Das Wärmerückgewinnungssystem sorgt für einen kontinuierlichen Luftaustausch und trägt zu einem angenehmen Raumklima bei.",
+            "Das Lüftungssystem mit Wärmerückgewinnung sorgt für einen kontinuierlichen Luftaustausch und trägt zu einem angenehmen Raumklima bei.",
+
         nova_oprema_stolarija_naslov:
             "▣ Fenster und Türen",
+
         nova_oprema_stolarija_opis:
-            "Hochwertige TROHA-DIL Fenster und Türen mit Dreifachverglasung, Rollläden und Insektenschutzgittern.",
+            "Hochwertige TROHA-DIL Fenster und Türen mit Dreifachverglasung, Rollläden und Insektenschutz.",
+
         nova_oprema_izolacija_naslov:
-            "⌂ Dämmung",
+            "⌂ Wärmedämmung",
+
         nova_oprema_izolacija_opis:
-            "Das Haus ist vom Fundament bis zum Dach hochwertig gedämmt und verfügt über eine Wärmedämmfassade sowie sorgfältig ausgeführte Oberflächen.",
+            "Das Haus ist vom Fundament bis zum Dach hochwertig gedämmt und verfügt über eine Wärmedämmfassade sowie sorgfältig ausgeführte Abschlussarbeiten.",
+
         nova_oprema_uredaji_naslov:
             "✓ Ausstattung",
-        nova_oprema_uredaji_opis:
-            "Das Haus wird vollständig möbliert und ausgestattet verkauft, einschließlich Bosch-Geräten, und ist sofort bezugsfertig.",
 
-        kontakt_naslov: "Kontakt",
+        nova_oprema_uredaji_opis:
+            "Das Haus wird vollständig möbliert und ausgestattet einschließlich Bosch-Geräten verkauft – sofort bezugsfertig.",
+
+
+        // =========================
+        // KONTAKT
+        // =========================
+
+        kontakt_naslov:
+            "Kontakt",
+
         kontakt_uvod:
             "Für weitere Informationen oder zur Vereinbarung eines Besichtigungstermins können Sie uns gerne kontaktieren.",
 
@@ -651,196 +1139,390 @@ const translations = {
 
         kontakt_zainteresirani:
             "Interessieren Sie sich für die Immobilie?",
+
         kontakt_pitanja:
-            "Gerne beantworten wir weitere Fragen und organisieren nach vorheriger Absprache eine Besichtigung der Immobilie.",
+            "Gerne beantworten wir weitere Fragen und vereinbaren nach Absprache einen Besichtigungstermin.",
+
         kontakt_dokumentacija:
-            "Ernsthaften Kaufinteressenten können wir Einsicht in relevante Unterlagen, den Grundbuchauszug sowie die Betriebskostenabrechnungen ermöglichen.",
-        kontakt_telefon: "TELEFON",
+            "Ernsthaften Kaufinteressenten können wir Einsicht in relevante Unterlagen, den Grundbuchauszug sowie Unterlagen zu den laufenden Nebenkosten ermöglichen.",
+
+        kontakt_telefon:
+            "TELEFON",
+
         kontakt_vise:
             "Möchten Sie mehr erfahren?",
+
         kontakt_dogovorimo:
-            "Vereinbaren wir einen Besichtigungstermin.",
+            "Vereinbaren Sie eine Besichtigung.",
+
         kontakt_nazovite:
             "Rufen Sie uns an",
 
-        lokacija_naslov: "Lage",
+
+        // =========================
+        // LAGE
+        // =========================
+
+        lokacija_naslov:
+            "Lage",
+
         lokacija_podnaslov:
             "Ruhige Lage in der Nähe von Virovitica",
+
         lokacija_udaljenost:
-            "8 km vom Zentrum von Virovitica entfernt",
+            "8 km vom Zentrum von Virovitica",
+
         lokacija_glavni_naslov:
-            "Alles für den täglichen Bedarf ist bequem erreichbar.",
+            "Alles für den täglichen Bedarf ist schnell erreichbar.",
+
         lokacija_opis:
-            "Die Immobilie befindet sich in der Gemeinde Špišić Bukovica, nur 8 km vom Zentrum von Virovitica entfernt, und verbindet ruhiges Wohnen mit einer sehr guten Erreichbarkeit aller wichtigen Einrichtungen des täglichen Lebens.",
-        lokacija_100m: "ca. 100 m",
+            "Die Immobilie befindet sich in der Gemeinde Špišić Bukovica, nur 8 km vom Zentrum von Virovitica entfernt. Die Lage verbindet ruhiges Wohnen mit einer sehr guten Erreichbarkeit aller wichtigen Einrichtungen des täglichen Lebens.",
+
+        lokacija_100m:
+            "ca. 100 m",
+
         lokacija_blizina_naslov:
             "In unmittelbarer Nähe",
+
         lokacija_blizina_opis:
             "Arztpraxis, Apotheke, Post, Geschäfte, Metzgerei und Bushaltestelle.",
-        lokacija_700m: "bis 700 m",
+
+        lokacija_700m:
+            "bis 700 m",
+
         lokacija_minute_naslov:
             "Nur wenige Minuten entfernt",
+
         lokacija_minute_opis:
-            "Grundschule, Kindergarten und Kirche, verbunden durch gepflegte Fußwege.",
+            "Grundschule, Kindergarten und Kirche, verbunden durch gepflegte Gehwege.",
+
         lokacija_karta:
-            "Standort auf der Karte ansehen",
+            "Lage auf der Karte anzeigen",
+
         lokacija_napomena:
             "Der genaue Standort der Immobilie wird ernsthaften Kaufinteressenten bei der Vereinbarung eines Besichtigungstermins mitgeteilt.",
 
-        okucnica_naslov: "Außenbereich",
+
+        // =========================
+        // AUSSENBEREICH
+        // =========================
+
+        okucnica_naslov:
+            "Außenbereich",
+
         okucnica_podnaslov:
-            "Ein gepflegter, eingezäunter und funktionaler Außenbereich auf einem Grundstück mit einer Gesamtfläche von 1.630 m².",
+            "Ein gepflegter, vollständig eingezäunter und funktionaler Außenbereich auf einem insgesamt 1.630 m² großen Grundstück.",
+
         okucnica_uredjena_naslov:
-            "Vollständig gestalteter Außenbereich",
+            "Vollständig angelegter Außenbereich",
+
         okucnica_uredjena_opis:
-            "Der Außenbereich ist vollständig gestaltet und eingezäunt und bietet Privatsphäre, Sicherheit und einen angenehmen Aufenthaltsbereich das ganze Jahr über.",
+            "Der Außenbereich ist vollständig angelegt und eingezäunt und bietet Privatsphäre, Sicherheit sowie einen angenehmen Platz für den Aufenthalt im Freien während des ganzen Jahres.",
+
         okucnica_asfalt_naslov:
-            "Asphaltierte Zufahrt und Parkplatz",
+            "Asphaltierte Zufahrt und Parkplätze",
+
         okucnica_asfalt_opis:
-            "Die asphaltierte Zufahrt ermöglicht einen praktischen und sicheren Zugang sowie ausreichend Platz zum Parken von Fahrzeugen.",
+            "Der asphaltierte Bereich ermöglicht eine praktische und sichere Zufahrt sowie ausreichend Platz zum Abstellen von Fahrzeugen.",
+
         okucnica_gredice_naslov:
             "Hochbeete",
+
         okucnica_gredice_opis:
-            "Hochbeete bieten praktischen Platz für den Anbau von eigenem Gemüse und Kräutern.",
+            "Die Hochbeete bieten einen praktischen Bereich für den Anbau von eigenem Gemüse und Kräutern.",
+
         okucnica_cvijece_naslov:
-            "Blumenoasen",
+            "Blühende Gartenoasen",
+
         okucnica_cvijece_opis:
-            "Blumen und gepflegte Grünflächen verleihen dem Außenbereich Wärme, Farbe und eine besondere Atmosphäre.",
+            "Blumen und gepflegte Grünflächen verleihen dem Garten Wärme, Farbe und eine besondere Atmosphäre.",
+
         okucnica_vocke_naslov:
             "Grünflächen und Obstbäume",
+
         okucnica_vocke_opis:
             "Großzügige Grünflächen und gepflanzte Obstbäume schaffen eine natürliche und angenehme Umgebung für den Aufenthalt im Freien.",
+
         okucnica_tlaka_naslov:
             "Gepflasterte Wege und Flächen",
+
         okucnica_tlaka_opis:
             "Gepflasterte Bereiche verbinden das Haus mit dem Garten und ermöglichen eine praktische und gepflegte Nutzung des Außenbereichs.",
-        okucnica_zen_naslov:
-            "Zen-Ecke zum Entspannen",
-        okucnica_zen_opis:
-            "Eine ruhige Ecke des Gartens bietet Raum zum Ausruhen, Entspannen und Genießen im Freien.",
-        okucnica_footer:
-            "Ein Ort, an dem sich der Wohnkomfort im Freien fortsetzt.",
 
-        osnovni_naslov: "Grunddaten",
+        okucnica_zen_naslov:
+            "Ruhiger Platz zum Entspannen",
+
+        okucnica_zen_opis:
+            "Ein ruhiger Bereich des Gartens bietet einen schönen Platz für Erholung, Entspannung und den Aufenthalt im Freien.",
+
+        okucnica_footer:
+            "Ein Ort, an dem sich der Wohnkomfort auch im Freien fortsetzt.",
+
+
+        // =========================
+        // GRUNDDATEN
+        // =========================
+
+        osnovni_naslov:
+            "Grunddaten",
+
         osnovni_podnaslov:
-            "Happy Place — Mein kleiner Teil des Universums",
+            "Happy Place — Mein kleines Stück Universum",
+
         osnovni_opis1:
-            "Wir verkaufen ein neues, vollständig fertiggestelltes und möbliertes Einfamilienhaus mit einer Bruttofläche von 134 m², moderner und funktionaler Raumaufteilung, nur 8 km vom Zentrum von Virovitica entfernt, im Herzen der Gemeinde Špišić Bukovica. Das Haus befindet sich auf einem Grundstück mit 1.630 m².",
+            "Wir verkaufen ein neues, vollständig fertiggestelltes und möbliertes Einfamilienhaus mit einer Bruttofläche von 134 m² und einer modernen, funktionalen Raumaufteilung. Das Haus befindet sich nur 8 km vom Zentrum von Virovitica entfernt, im Herzen der Gemeinde Špišić Bukovica, auf einem 1.630 m² großen Grundstück.",
+
         osnovni_opis2:
-            "Das Haus wird schlüsselfertig einschließlich Möbeln und Ausstattung verkauft, ohne dass weitere Investitionen erforderlich sind. Es ist vom Fundament bis zum Dach hochwertig gedämmt, klimatisiert und mit Fußbodenheizung sowie intelligenter Wärmerückgewinnung ausgestattet. Das Haus, die Nebengebäude und der gesamte Außenbereich sind vollständig fertiggestellt, eingezäunt und mit Asphalt, Pflasterflächen und Grünflächen gestaltet.",
+            "Das Haus wird schlüsselfertig einschließlich Möbeln und Ausstattung verkauft – ohne zusätzlichen Investitionsbedarf. Es ist vom Fundament bis zum Dach hochwertig gedämmt, klimatisiert und mit Fußbodenheizung sowie intelligenter Lüftung mit Wärmerückgewinnung ausgestattet. Das Haus, die Nebengebäude und der gesamte Außenbereich sind fertiggestellt, eingezäunt und mit Asphaltflächen, Pflasterungen und Grünflächen angelegt.",
+
         osnovni_dokumentacija:
-            "Die Unterlagen sind vollständig, die Immobilie ist lastenfrei und ein Kauf über einen Wohnkredit ist möglich.",
+            "Die Unterlagen sind vollständig, die Immobilie ist lastenfrei und der Kauf über eine Immobilienfinanzierung ist möglich.",
+
         osnovni_opis3:
-            "Wir leben seit etwas mehr als vier Jahren in diesem Haus und haben es in dieser Zeit weiter eingerichtet und ausgestattet. Wir verkaufen das Haus aufgrund einer Veränderung unseres Lebensstils und unseres Wunsches, künftig in einer Wohnung zu leben.",
+            "Wir leben seit etwas mehr als vier Jahren in diesem Haus und haben es in dieser Zeit zusätzlich eingerichtet und ausgestattet. Wir verkaufen das Haus aufgrund einer Veränderung unseres Lebensstils und des Wunsches, künftig in einer Wohnung zu leben.",
+
+
+        // =========================
+        // NEBENGEBÄUDE
+        // =========================
 
         pomocni_naslov:
             "Nebengebäude",
+
         pomocni_podnaslov:
             "Garage, Keller, Abstellraum und Werkstatt",
+
         pomocni_dodatni:
             "ZUSÄTZLICHER RAUM",
+
         pomocni_garaza_naslov:
             "Garage, Abstellraum und Keller",
+
         pomocni_garaza_opis1:
-            "Neben dem Haupthaus befinden sich baulich getrennte Nebenräume. Garage, Abstellraum und Keller bilden zusammen einen funktionalen zusätzlichen Bereich für Fahrzeug, Lagerung und weitere Zwecke.",
+            "Neben dem Haupthaus befinden sich räumlich getrennte Nebenräume. Garage, Abstellraum und Keller bieten zusammen zusätzlichen funktionalen Raum für ein Fahrzeug, Lagerung und weitere Nutzungsmöglichkeiten.",
+
         pomocni_garaza_opis2:
-            "Die Garage verfügt über ein motorisiertes automatisches Tor mit Fernbedienung; darunter befindet sich ein Keller.",
+            "Die Garage verfügt über ein motorbetriebenes automatisches Tor mit Fernbedienung. Unter der Garage befindet sich ein Keller.",
+
         pomocni_prakticno:
-            "PRAKTISCH UND GETRENNT",
+            "PRAKTISCH UND SEPARAT",
+
         pomocni_radionica_naslov:
             "Separate Werkstatt",
+
         pomocni_radionica_opis1:
-            "Gegenüber der Garage befindet sich eine vollständig ausgebaute Werkstatt mit Holzofen.",
+            "Gegenüber der Garage befindet sich eine vollständig eingerichtete Werkstatt mit einem Holzofen.",
+
         pomocni_radionica_opis2:
-            "Der Raum ist baulich vom Haupthaus getrennt und sofort nutzbar.",
+            "Der Raum ist vom Haupthaus räumlich getrennt und sofort nutzbar.",
+
         pomocni_radionica_opis3:
-            "Alle Nebenräume verfügen wie das Haus über eine Wärmedämmfassade, geflieste Böden und einen Stromanschluss.",
+            "Alle Nebenräume verfügen über die gleiche Wärmedämmfassade wie das Haus, sind gefliest und an das Stromnetz angeschlossen.",
+
         pomocni_okucnica:
             "AUSSENBEREICH",
+
         pomocni_vrt_naslov:
-            "Platz zum Leben und Entspannen im Freien",
+            "Platz zum Leben und Genießen im Freien",
+
         pomocni_vrt_opis:
-            "Der gepflegte und eingezäunte Außenbereich bietet ausreichend Platz zum Entspannen, Gärtnern, Zusammensein und für verschiedene Aktivitäten im Freien.",
+            "Der gepflegte und eingezäunte Garten bietet ausreichend Platz für Erholung, Gartenarbeit, geselliges Beisammensein und verschiedene Aktivitäten im Freien.",
+
+
+        // =========================
+        // RAUMAUFTEILUNG
+        // =========================
 
         raspored_naslov:
             "Raumaufteilung des Hauses",
+
         raspored_podnaslov:
-            "Großzügiger und funktionaler Raum für Alltag und Arbeit",
+            "Ein großzügiges und funktionales Zuhause für Alltag und Arbeit",
+
         raspored_spavace:
             "Schlafzimmer",
+
         raspored_kupaonica:
             "Badezimmer",
+
         raspored_tehnicka:
             "Technikraum",
+
         raspored_smocnica:
             "Speisekammer",
+
         raspored_open:
             "Offener Wohnbereich",
+
         raspored_dnevni:
             "Wohnzimmer, Essbereich und Küche",
+
         raspored_tavan:
             "Dachboden",
+
         raspored_tavan_opis:
             "Zugang vom Technikraum",
+
         raspored_opis:
-            "Der zentrale Wohnbereich wurde bewusst großzügig geplant, damit er neben dem täglichen Familienleben auch ausreichend Platz für geselliges Beisammensein, Feiern und größere Zusammenkünfte bietet.",
+            "Der zentrale Wohnbereich wurde bewusst großzügig gestaltet, damit er neben dem täglichen Familienleben auch ausreichend Platz für gemütliche Treffen, Feiern und größere Zusammenkünfte bietet.",
+
+
+        // =========================
+        // TAUSCH
+        // =========================
 
         zamjena_mogucnost:
             "VEREINBARUNG MÖGLICH",
+
         zamjena_naslov:
-            "Immobilientausch",
+            "Tausch",
+
         zamjena_podnaslov:
-            "Ein Tausch gegen eine kleinere, neuere Wohnung mit Zuzahlung ist möglich.",
+            "Tausch gegen eine kleinere, neuere Wohnung mit Zuzahlung möglich.",
+
         zamjena_glavni_naslov:
-            "Tausch gegen eine kleinere, neuere Wohnung mit Zuzahlung",
+            "Tausch gegen eine kleinere, neuere Wohnung mit Zuzahlung möglich",
+
         zamjena_vazan_uvjet:
-            "WICHTIGE VORAUSSETZUNG",
+            "WICHTIGE BEDINGUNG",
+
         zamjena_lokacija_naslov:
             "Die Lage ist uns besonders wichtig",
+
         zamjena_lokacija_opis1:
-            "Bevorzugt werden Immobilien in größeren Städten, möglichst nahe am Stadtzentrum und möglichst weit von der Bahnstrecke entfernt.",
+            "Bevorzugt werden Immobilien in größeren Städten, möglichst zentrumsnah und möglichst weit von einer Bahnstrecke entfernt.",
+
         zamjena_lokacija_opis2:
-            "Immobilien in unmittelbarer Nähe der Bahnstrecke sowie Immobilien rund um oder auf der gegenüberliegenden Seite der Bahnstrecke in Bezug auf das Stadtzentrum können wir nicht berücksichtigen.",
+            "Immobilien in unmittelbarer Nähe einer Bahnstrecke sowie Immobilien, die vom Stadtzentrum aus gesehen an oder auf der anderen Seite der Bahnstrecke liegen, können wir nicht berücksichtigen.",
+
         zamjena_zavrsno:
-            "Bei Wohnungen suchen wir neuere Gebäude mit ordnungsgemäßer Dokumentation. Für seriöse Vorschläge sind wir offen, sofern beiderseitiges Interesse und eine Einigungsmöglichkeit bestehen."
+            "Bei Wohnungen suchen wir einen neueren Bau und vollständige Unterlagen. Für ernsthafte Vorschläge sind wir offen, sofern gegenseitiges Interesse und eine Einigungsmöglichkeit bestehen.",
+
+
+        // =====================================================
+        // ÜBER DIE GEMEINDE ŠPIŠIĆ BUKOVICA
+        // =====================================================
+
+        opcina_naslov:
+            "Über Špišić Bukovica",
+
+        opcina_podnaslov:
+            "Eine gepflegte Gemeinde nahe Virovitica – Ruhe, Natur und alles Wichtige für den Alltag.",
+
+        opcina_oznaka:
+            "EIN ORT ZUM LEBEN",
+
+        opcina_uvod_naslov:
+            "Die Ruhe eines kleineren Ortes und die Stadt ganz in der Nähe",
+
+        opcina_uvod_tekst:
+            "Špišić Bukovica liegt nur 8 km von Virovitica entfernt. Ein gepflegtes Ortsbild, Einrichtungen des täglichen Bedarfs, Fußwege, Freizeitmöglichkeiten und eine aktive lokale Gemeinschaft machen den Ort das ganze Jahr über zu einem angenehmen Wohnort.",
+
+
+        // ZIDINE
+
+        opcina_zidine_oznaka:
+            "NATUR UND ERHOLUNG",
+
+        opcina_zidine_naslov:
+            "Zidine – Spaziergänge, Natur und Angeln",
+
+        opcina_zidine_tekst:
+            "Das Rückhaltebecken Zidine, bei den Einwohnern auch als Brana bekannt, bietet Möglichkeiten für Naturerlebnisse, Erholung und Sportangeln. Rund um das Gebiet wurde ein Lehrpfad angelegt, der zusätzliche Möglichkeiten für Spaziergänge und Entspannung bietet.",
+
+
+        // SPAZIER- UND RADWEGE
+
+        opcina_setnice_oznaka:
+            "AKTIVES LEBEN",
+
+        opcina_setnice_naslov:
+            "Spazierwege, Gehwege und Fahrradrouten",
+
+        opcina_setnice_tekst:
+            "Die Gemeinde investiert kontinuierlich in die Verkehrs- und Freizeitinfrastruktur. Neben gepflegten Fußwegen führen Fahrradrouten wie der Podravina-Rundweg durch das Gebiet. Auch weitere pannonische und draunahe Fahrradrouten verlaufen durch das Gemeindegebiet.",
+
+
+        // HOTEL MOZART
+
+        opcina_mozart_oznaka:
+            "GASTRONOMIE UND TOURISMUS",
+
+        opcina_mozart_naslov:
+            "Hotel Mozart",
+
+        opcina_mozart_tekst:
+            "In Špišić Bukovica befindet sich das Vier-Sterne-Hotel Mozart. In den Unterlagen der Gemeinde werden sein gastronomisches und touristisches Angebot sowie seine Lage in der natürlichen Umgebung der Bilogora hervorgehoben.",
+
+
+        // RELIGIÖSES LEBEN
+
+        opcina_vjera_naslov:
+            "Reiches religiöses und traditionelles Leben",
+
+        opcina_vjera_tekst:
+            "Die Pfarrei des heiligen Johannes des Täufers blickt auf eine lange Tradition zurück. Das Fest des heiligen Johannes am 24. Juni ist eng mit dem Tag der Gemeinde und der traditionellen Ivanje-Feier verbunden. Im Ort gibt es außerdem eine Adventgemeinde, was die Vielfalt des religiösen Lebens widerspiegelt.",
+
+
+        // KULTUR UND GEMEINSCHAFT
+
+        opcina_kultura_naslov:
+            "Eine aktive und verbundene Gemeinschaft",
+
+        opcina_kultura_tekst:
+            "Der Tag der Gemeinde – Ivanje, traditionelle Johannisfeuer, Sport- und Angelveranstaltungen sowie zahlreiche Vereine sorgen für ein lebendiges gesellschaftliches Leben. In der Gemeinde sind Sport-, Kultur-, Feuerwehr-, Angel- und weitere Vereine aktiv.",
+
+
+        // SCHNELLSTRASSE
+
+        opcina_cesta_oznaka:
+            "VERKEHRSANBINDUNG",
+
+        opcina_cesta_naslov:
+            "Neue Schnellstraße in Richtung Virovitica",
+
+        opcina_cesta_tekst:
+            "Der neue Schnellstraßenabschnitt auf der Strecke Špišić Bukovica – Virovitica verbessert die Verkehrsanbindung zusätzlich. Die Strecke ist Teil des größeren Projekts zur Verbindung von Virovitica über Bjelovar in Richtung Zagreb. Die noch fehlenden Abschnitte werden schrittweise fertiggestellt.",
+
+
+        // TANKSTELLE UND VERSORGUNG
+
+        opcina_pumpa_naslov:
+            "Einrichtungen des täglichen Bedarfs in der Nähe",
+
+        opcina_pumpa_tekst:
+            "Neben Geschäften, Post, Apotheke, Arztpraxis und Bushaltestelle befindet sich auch eine Tankstelle in der Nähe. Für größere Einkäufe und zusätzliche Angebote ist Virovitica nur wenige Autominuten entfernt.",
+
+
+        // GEPFLEGTE GEMEINDE
+
+        opcina_uredjena_naslov:
+            "Eine gepflegte Gemeinde",
+
+        opcina_uredjena_tekst:
+            "Špišić Bukovica verbindet ein gepflegtes Ortsbild, lokale Einrichtungen, Natur und die Nähe zur Stadt. Hier kann der Alltag in einem ruhigeren Rhythmus stattfinden, während gleichzeitig eine sehr gute Verbindung nach Virovitica besteht.",
+
+
+        // ABSCHLUSS
+
+        opcina_zakljucak_naslov:
+            "Ruhe zu Hause. Natur vor der Tür. Die Stadt nur wenige Minuten entfernt.",
+
+        opcina_zakljucak_tekst:
+            "Happy Place befindet sich in Špišić Bukovica – nur 8 km vom Zentrum von Virovitica entfernt, in einer Gemeinde, die ruhiges Wohnen, Natur, Freizeitmöglichkeiten und Einrichtungen des täglichen Bedarfs miteinander verbindet.",
+
+        opcina_pogledaj_lokaciju:
+            "Lage des Hauses anzeigen",
+
+        opcina_izvor:
+            "Quelle und Foto",
+
+        opcina_fotografija:
+            "Foto",
+
+        opcina_vise:
+            "Mehr erfahren"
+
     }
+
 };
-
-
-// =========================
-// PROMJENA JEZIKA
-// =========================
-
-function promijeniJezik(jezik) {
-
-    if (!translations[jezik]) {
-        jezik = "hr";
-    }
-
-    document.querySelectorAll("[data-i18n]").forEach(element => {
-
-        const kljuc = element.dataset.i18n;
-        const prijevod = translations[jezik][kljuc];
-
-        if (prijevod !== undefined) {
-            element.textContent = prijevod;
-        }
-
-    });
-
-    localStorage.setItem("jezik", jezik);
-    document.documentElement.lang = jezik;
-}
-
-
-// =========================
-// UČITAVANJE SPREMLJENOG JEZIKA
-// =========================
-
-document.addEventListener("DOMContentLoaded", function () {
-
-    const spremljeniJezik =
-        localStorage.getItem("jezik") || "hr";
-
-    promijeniJezik(spremljeniJezik);
-});
