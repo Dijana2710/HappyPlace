@@ -1526,3 +1526,71 @@ const translations = {
     }
 
 };
+
+// =========================================================
+// PROMJENA I PAMĆENJE JEZIKA
+// =========================================================
+
+function primijeniJezik(jezik) {
+    const odabraniPrijevodi = translations[jezik];
+
+    if (!odabraniPrijevodi) {
+        return;
+    }
+
+    document.documentElement.lang = jezik;
+
+    document.querySelectorAll("[data-i18n]").forEach((element) => {
+        const kljuc = element.dataset.i18n;
+
+        if (Object.prototype.hasOwnProperty.call(odabraniPrijevodi, kljuc)) {
+            element.textContent = odabraniPrijevodi[kljuc];
+        }
+    });
+
+    document.querySelectorAll(".jezici button").forEach((gumb) => {
+        const jezikGumba = gumb.textContent.trim().toLowerCase();
+        const aktivan = jezikGumba === jezik;
+
+        gumb.classList.toggle("aktivan-jezik", aktivan);
+        gumb.setAttribute("aria-pressed", aktivan ? "true" : "false");
+    });
+}
+
+function promijeniJezik(jezik) {
+    if (!translations[jezik]) {
+        return;
+    }
+
+    try {
+        localStorage.setItem("happyPlaceJezik", jezik);
+    } catch (pogreska) {
+        // Prijevod radi i kada preglednik ne dopušta localStorage.
+    }
+
+    primijeniJezik(jezik);
+}
+
+function ucitajSpremljeniJezik() {
+    let jezik = "hr";
+
+    try {
+        const spremljeniJezik = localStorage.getItem("happyPlaceJezik");
+
+        if (translations[spremljeniJezik]) {
+            jezik = spremljeniJezik;
+        }
+    } catch (pogreska) {
+        // Ako localStorage nije dostupan, koristi se hrvatski.
+    }
+
+    primijeniJezik(jezik);
+}
+
+window.promijeniJezik = promijeniJezik;
+
+if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", ucitajSpremljeniJezik);
+} else {
+    ucitajSpremljeniJezik();
+}
