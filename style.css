@@ -1984,6 +1984,16 @@ body {
     font-size: 15px;
 }
 
+/* Kartica prometne povezanosti bez fotografije */
+.opcina-red.opcina-red-bez-fotografije {
+    display: block;
+    max-width: 1200px;
+}
+
+.opcina-red-bez-fotografije .opcina-kartica {
+    margin: 0;
+}
+
 /* =========================================================
    O OPĆINI ŠPIŠIĆ BUKOVICA
    ========================================================= */

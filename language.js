@@ -470,7 +470,7 @@ const translations = {
             "Svakodnevne usluge u blizini",
 
         opcina_pumpa_tekst:
-            "Uz trgovine, poštu, ljekarnu, ambulantu i autobusnu stanicu, u blizini se nalazi i benzinska postaja. Za veće kupovine i dodatne sadržaje Virovitica je udaljena svega nekoliko minuta vožnje.",
+            "Mjesto ima zgradu općinske uprave, školu, dječji vrtić, crkvu, liječničku ambulantu, ljekarnu, poštu, trgovinu, mesnicu, autobusnu stanicu i benzinsku postaju. Sve se nalazi u blizini kuće, dok je Virovitica, s dodatnim sadržajima, udaljena svega nekoliko minuta vožnje.",
 
 
         // UREĐENA ZAJEDNICA
@@ -974,7 +974,7 @@ const translations = {
             "Everyday services nearby",
 
         opcina_pumpa_tekst:
-            "In addition to shops, a post office, pharmacy, medical clinic and bus stop, a fuel station is also located nearby. For larger shopping trips and additional amenities, Virovitica is only a few minutes away by car.",
+            "The village has a municipal administration building, school, kindergarten, church, medical clinic, pharmacy, post office, grocery shop, butcher's shop, bus stop and petrol station. All are located close to the house, while Virovitica, with additional amenities, is only a few minutes away by car.",
 
 
         // WELL-KEPT COMMUNITY
@@ -1491,7 +1491,7 @@ const translations = {
             "Einrichtungen des täglichen Bedarfs in der Nähe",
 
         opcina_pumpa_tekst:
-            "Neben Geschäften, Post, Apotheke, Arztpraxis und Bushaltestelle befindet sich auch eine Tankstelle in der Nähe. Für größere Einkäufe und zusätzliche Angebote ist Virovitica nur wenige Autominuten entfernt.",
+            "Der Ort verfügt über ein Gemeindeamt, eine Schule, einen Kindergarten, eine Kirche, eine Arztpraxis, eine Apotheke, ein Postamt, ein Lebensmittelgeschäft, eine Metzgerei, eine Bushaltestelle und eine Tankstelle. Alles befindet sich in der Nähe des Hauses, während Virovitica mit weiteren Angeboten nur wenige Autominuten entfernt ist.",
 
 
         // GEPFLEGTE GEMEINDE
