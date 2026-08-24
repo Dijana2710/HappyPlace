@@ -488,7 +488,7 @@ const translations = {
             "Mir kod kuće. Priroda oko vas. Grad na nekoliko minuta.",
 
         opcina_zakljucak_tekst:
-            "Happy Place nalazi se u Špišić Bukovici – svega 8 km od centra Virovitice, u zajednici koja pruža dobar spoj mirnog stanovanja, prirode, rekreacije i svakodnevnih sadržaja.",
+            "Nova, potpuno opremljena kuća nalazi se u Špišić Bukovici – svega 8 km od centra Virovitice, u zajednici koja pruža dobar spoj mirnog stanovanja, prirode, rekreacije i svakodnevnih sadržaja.",
 
         opcina_pogledaj_lokaciju:
             "Pogledaj lokaciju kuće",
@@ -992,7 +992,7 @@ const translations = {
             "Peace at home. Nature around you. The city just minutes away.",
 
         opcina_zakljucak_tekst:
-            "Happy Place is located in Špišić Bukovica – only 8 km from the centre of Virovitica, in a community that offers a good combination of peaceful living, nature, recreation and everyday amenities.",
+            "This new, fully equipped house is located in Špišić Bukovica – only 8 km from the centre of Virovitica, in a community that offers a good combination of peaceful living, nature, recreation and everyday amenities.",
 
         opcina_pogledaj_lokaciju:
             "View the house location",
@@ -1509,7 +1509,7 @@ const translations = {
             "Ruhe zu Hause. Natur vor der Tür. Die Stadt nur wenige Minuten entfernt.",
 
         opcina_zakljucak_tekst:
-            "Happy Place befindet sich in Špišić Bukovica – nur 8 km vom Zentrum von Virovitica entfernt, in einer Gemeinde, die ruhiges Wohnen, Natur, Freizeitmöglichkeiten und Einrichtungen des täglichen Bedarfs miteinander verbindet.",
+            "Dieses neue, vollständig ausgestattete Haus befindet sich in Špišić Bukovica – nur 8 km vom Zentrum von Virovitica entfernt, in einer Gemeinde, die ruhiges Wohnen, Natur, Freizeitmöglichkeiten und Einrichtungen des täglichen Bedarfs miteinander verbindet.",
 
         opcina_pogledaj_lokaciju:
             "Lage des Hauses anzeigen",
