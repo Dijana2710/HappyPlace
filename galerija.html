@@ -18,7 +18,16 @@
             <h1 data-i18n="okuci_video">Galerija</h1>
         </header>
 
-        <div class="galerija-mreza">
+        <nav class="galerija-kategorije" aria-label="Kategorije galerije">
+            <button class="galerija-kategorija aktivna" type="button" data-galerija="izvana"
+                data-i18n="galerija_izvana">Slike izvana</button>
+            <button class="galerija-kategorija" type="button" data-galerija="iznutra"
+                data-i18n="galerija_iznutra">Slike iznutra</button>
+        </nav>
+
+        <section class="galerija-panel aktivan" data-panel="izvana">
+            <h2 class="galerija-naslov-sekcije" data-i18n="galerija_izvana">Slike izvana</h2>
+            <div class="galerija-mreza">
             <button type="button"><img src="Galerija/cvijece.jpg" alt="Cvijeće" loading="lazy"></button>
             <button type="button"><img src="Galerija/garaza.jpg" alt="Garaža" loading="lazy"></button>
             <button type="button"><img src="Galerija/gredice.jpg" alt="Gredice" loading="lazy"></button>
@@ -43,7 +52,16 @@
             <button type="button"><img src="Galerija/vocka.jpg" alt="Voćka" loading="lazy"></button>
             <button type="button"><img src="Galerija/vrata.jpg" alt="Vrata" loading="lazy"></button>
             <button type="button"><img src="Galerija/vrt.jpg" alt="Vrt" loading="lazy"></button>
-        </div>
+            </div>
+        </section>
+
+        <section class="galerija-panel" data-panel="iznutra" hidden>
+            <div class="galerija-prazna">
+                <span aria-hidden="true">⌂</span>
+                <h2 data-i18n="galerija_iznutra">Slike iznutra</h2>
+                <p data-i18n="galerija_iznutra_uskoro">Fotografije interijera bit će dodane uskoro.</p>
+            </div>
+        </section>
     </main>
 
     <dialog class="galerija-pregled" aria-label="Pregled fotografije">
@@ -55,6 +73,26 @@
     <script>
         const pregled = document.querySelector('.galerija-pregled');
         const velikaSlika = pregled.querySelector('img');
+
+        document.querySelectorAll('.galerija-kategorija').forEach((gumb) => {
+            gumb.setAttribute('aria-pressed', gumb.classList.contains('aktivna'));
+
+            gumb.addEventListener('click', () => {
+                const kategorija = gumb.dataset.galerija;
+
+                document.querySelectorAll('.galerija-kategorija').forEach((stavka) => {
+                    const aktivna = stavka === gumb;
+                    stavka.classList.toggle('aktivna', aktivna);
+                    stavka.setAttribute('aria-pressed', aktivna);
+                });
+
+                document.querySelectorAll('.galerija-panel').forEach((panel) => {
+                    const aktivan = panel.dataset.panel === kategorija;
+                    panel.classList.toggle('aktivan', aktivan);
+                    panel.hidden = !aktivan;
+                });
+            });
+        });
 
         document.querySelectorAll('.galerija-mreza button').forEach((gumb) => {
             gumb.addEventListener('click', () => {

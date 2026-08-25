@@ -56,6 +56,9 @@ const translations = {
         okuci_pomocni: "Pomoćni objekti",
         okuci_okucnica: "Okućnica",
         okuci_video: "Galerija",
+        galerija_izvana: "Slike izvana",
+        galerija_iznutra: "Slike iznutra",
+        galerija_iznutra_uskoro: "Fotografije interijera bit će dodane uskoro.",
 
 
         // =========================
@@ -561,6 +564,9 @@ const translations = {
         okuci_pomocni: "Auxiliary buildings",
         okuci_okucnica: "Outdoor area",
         okuci_video: "Gallery",
+        galerija_izvana: "Exterior photos",
+        galerija_iznutra: "Interior photos",
+        galerija_iznutra_uskoro: "Interior photos will be added soon.",
 
 
         // =========================
@@ -1078,6 +1084,9 @@ const translations = {
 
         okuci_video:
             "Galerie",
+        galerija_izvana: "Außenaufnahmen",
+        galerija_iznutra: "Innenaufnahmen",
+        galerija_iznutra_uskoro: "Fotos der Innenräume werden in Kürze hinzugefügt.",
 
 
         // =========================
