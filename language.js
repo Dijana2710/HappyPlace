@@ -55,7 +55,7 @@ const translations = {
         okuci_oprema: "Grijanje i oprema",
         okuci_pomocni: "Pomoćni objekti",
         okuci_okucnica: "Okućnica",
-        okuci_video: "Video galerija",
+        okuci_video: "Galerija",
 
 
         // =========================
@@ -560,7 +560,7 @@ const translations = {
         okuci_oprema: "Heating and equipment",
         okuci_pomocni: "Auxiliary buildings",
         okuci_okucnica: "Outdoor area",
-        okuci_video: "Video gallery",
+        okuci_video: "Gallery",
 
 
         // =========================
@@ -1077,7 +1077,7 @@ const translations = {
             "Außenbereich",
 
         okuci_video:
-            "Videogalerie",
+            "Galerie",
 
 
         // =========================
