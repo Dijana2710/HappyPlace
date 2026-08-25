@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="hr" translate="no">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google" content="notranslate">
+    <title>Galerija | Happy Place</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="galerija-stranica">
+    <a href="o-kuci.html" class="back-gumb" data-i18n="back">← Natrag</a>
+
+    <main class="galerija-sadrzaj">
+        <header class="galerija-zaglavlje">
+            <p>HAPPY PLACE</p>
+            <h1 data-i18n="okuci_video">Galerija</h1>
+        </header>
+
+        <div class="galerija-mreza">
+            <button type="button"><img src="Galerija/cvijece.jpg" alt="Cvijeće" loading="lazy"></button>
+            <button type="button"><img src="Galerija/garaza.jpg" alt="Garaža" loading="lazy"></button>
+            <button type="button"><img src="Galerija/gredice.jpg" alt="Gredice" loading="lazy"></button>
+            <button type="button"><img src="Galerija/happy.jpg" alt="Happy Place" loading="lazy"></button>
+            <button type="button"><img src="Galerija/kuca.jpg" alt="Kuća" loading="lazy"></button>
+            <button type="button"><img src="Galerija/luk.jpg" alt="Luk u vrtu" loading="lazy"></button>
+            <button type="button"><img src="Galerija/motor.jpg" alt="Dvorište" loading="lazy"></button>
+            <button type="button"><img src="Galerija/ograda.jpg" alt="Ograda" loading="lazy"></button>
+            <button type="button"><img src="Galerija/radionaa.jpg" alt="Radiona" loading="lazy"></button>
+            <button type="button"><img src="Galerija/stolica.jpg" alt="Stolica" loading="lazy"></button>
+            <button type="button"><img src="Galerija/terasa.jpg" alt="Terasa" loading="lazy"></button>
+            <button type="button"><img src="Galerija/tlaka.jpg" alt="Popločeno dvorište" loading="lazy"></button>
+            <button type="button"><img src="Galerija/ulaz.jpg" alt="Ulaz" loading="lazy"></button>
+            <button type="button"><img src="Galerija/unnamed%20(1).jpg" alt="Happy Place" loading="lazy"></button>
+            <button type="button"><img src="Galerija/unnamed%20(2).jpg" alt="Happy Place" loading="lazy"></button>
+            <button type="button"><img src="Galerija/unnamed%20(3).jpg" alt="Happy Place" loading="lazy"></button>
+            <button type="button"><img src="Galerija/unnamed%20(4).jpg" alt="Happy Place" loading="lazy"></button>
+            <button type="button"><img src="Galerija/unnamed%20(5).jpg" alt="Happy Place" loading="lazy"></button>
+            <button type="button"><img src="Galerija/unnamed%20(6).jpg" alt="Happy Place" loading="lazy"></button>
+            <button type="button"><img src="Galerija/unnamed%20(7).jpg" alt="Happy Place" loading="lazy"></button>
+            <button type="button"><img src="Galerija/unnamed.jpg" alt="Happy Place" loading="lazy"></button>
+            <button type="button"><img src="Galerija/vocka.jpg" alt="Voćka" loading="lazy"></button>
+            <button type="button"><img src="Galerija/vrata.jpg" alt="Vrata" loading="lazy"></button>
+            <button type="button"><img src="Galerija/vrt.jpg" alt="Vrt" loading="lazy"></button>
+        </div>
+    </main>
+
+    <dialog class="galerija-pregled" aria-label="Pregled fotografije">
+        <button class="galerija-zatvori" type="button" aria-label="Zatvori">×</button>
+        <img src="" alt="">
+    </dialog>
+
+    <script src="language.js"></script>
+    <script>
+        const pregled = document.querySelector('.galerija-pregled');
+        const velikaSlika = pregled.querySelector('img');
+
+        document.querySelectorAll('.galerija-mreza button').forEach((gumb) => {
+            gumb.addEventListener('click', () => {
+                const slika = gumb.querySelector('img');
+                velikaSlika.src = slika.src;
+                velikaSlika.alt = slika.alt;
+                pregled.showModal();
+            });
+        });
+
+        pregled.querySelector('.galerija-zatvori').addEventListener('click', () => pregled.close());
+        pregled.addEventListener('click', (dogadaj) => {
+            if (dogadaj.target === pregled) pregled.close();
+        });
+    </script>
+</body>
+
+</html>
