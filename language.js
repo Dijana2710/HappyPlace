@@ -15,6 +15,7 @@ const translations = {
         menu_lokacija: "Lokacija",
         menu_opcina: "O općini Špišić Bukovica",
         menu_galerija: "Galerija",
+        menu_virtualna_setnja: "Virtualna šetnja",
         menu_zamjena: "Zamjena",
         menu_kontakt: "Kontakt",
 
@@ -519,6 +520,7 @@ const translations = {
         menu_lokacija: "Location",
         menu_opcina: "About Špišić Bukovica",
         menu_galerija: "Gallery",
+        menu_virtualna_setnja: "Virtual tour",
         menu_zamjena: "Exchange",
         menu_kontakt: "Contact",
 
@@ -1023,6 +1025,7 @@ const translations = {
         menu_lokacija: "Lage",
         menu_opcina: "Über Špišić Bukovica",
         menu_galerija: "Galerie",
+        menu_virtualna_setnja: "Virtueller Rundgang",
         menu_zamjena: "Tausch",
         menu_kontakt: "Kontakt",
 
