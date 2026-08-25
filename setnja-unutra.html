@@ -3,28 +3,33 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
-
-    <title>Šetnja unutra – Happy Place</title>
-
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtualna šetnja iznutra – Happy Place</title>
+    <link rel="stylesheet" href="setnja.css">
 </head>
 
 <body>
-    <main class="osnovni-sadrzaj">
-        <h1>Šetnja unutra</h1>
+    <main class="setnja">
+        <img id="fotografija" src="Unutra/IMG_1741.JPEG" alt="Ulazni hodnik">
 
-        <p>
-            Unutarnja virtualna šetnja uskoro će biti dostupna.
-        </p>
+        <a class="setnja-povratak" href="index.html#virtualna-setnja">← Povratak</a>
+        <div class="setnja-oznaka" id="oznaka-prizora">Ulazni hodnik</div>
 
-        <a class="back-gumb" href="index.html">
-            ← Povratak
-        </a>
+        <button id="lijevo" type="button" aria-label="Pogled lijevo">←</button>
+        <button id="desno" type="button" aria-label="Pogled desno">→</button>
+        <button id="gore" type="button" aria-label="Kreni naprijed">↑</button>
+        <button id="dolje" type="button" aria-label="Vrati se natrag">↓</button>
+
+        <nav class="hodnik-odabiri" id="hodnik-odabiri" aria-label="Prostorije iz ulaznog hodnika">
+            <button type="button" data-prizor="soba1"><span>←</span> Soba 1</button>
+            <button type="button" data-prizor="kupaonica"><span>←</span> Kupaonica</button>
+            <button type="button" data-prizor="soba2"><span>←</span> Soba 2</button>
+            <button type="button" data-prizor="soba3"><span>↑</span> Soba 3</button>
+            <button type="button" data-prizor="tehnoSoba"><span>→</span> Tehno soba</button>
+        </nav>
     </main>
+
+    <script src="setnja-unutra.js"></script>
 </body>
 
 </html>
