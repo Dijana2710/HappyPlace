@@ -74,7 +74,7 @@ const translations = {
             "♨ Podno grijanje",
 
         nova_oprema_podno_opis:
-            "Podno grijanje na plin izvedeno je po cijelom tlocrtu kuće, pružajući ravnomjernu i ugodnu toplinu u svim prostorijama.",
+            "Podno grijanje na plin izvedeno je po cijelom tlocrtu kuće, s regulatorima temperature u svakoj prostoriji, čime se osigurava ravnomjerna i ugodna toplina u cijelom domu.",
 
         nova_oprema_klima_naslov:
             "❄ Klimatizacija",
@@ -582,7 +582,7 @@ const translations = {
             "♨ Underfloor heating",
 
         nova_oprema_podno_opis:
-            "Gas underfloor heating is installed throughout the entire floor plan of the house, providing even and pleasant warmth in all rooms.",
+            "Gas underfloor heating is installed throughout the house, with individual temperature controls in every room, ensuring even and comfortable warmth throughout the home.",
 
         nova_oprema_klima_naslov:
             "❄ Air conditioning",
@@ -1103,7 +1103,7 @@ const translations = {
             "♨ Fußbodenheizung",
 
         nova_oprema_podno_opis:
-            "Im gesamten Haus ist eine gasbetriebene Fußbodenheizung installiert, die in allen Räumen für eine gleichmäßige und angenehme Wärme sorgt.",
+            "Im gesamten Haus ist eine gasbetriebene Fußbodenheizung mit individuellen Temperaturreglern in jedem Raum installiert, die überall für eine gleichmäßige und angenehme Wärme sorgt.",
 
         nova_oprema_klima_naslov:
             "❄ Klimaanlage",
