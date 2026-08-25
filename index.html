@@ -4,7 +4,10 @@
 <head>
     <meta charset="UTF-8">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
     <meta name="google" content="notranslate">
 
@@ -27,35 +30,74 @@
         <nav class="izbornik">
 
             <div class="logo">
-               <img src="Slike/logo.jpg"
-     alt="Happy Place logo"
-     translate="no">
-
+                <img
+                    src="Slike/logo.jpg"
+                    alt="Happy Place logo"
+                    translate="no"
+                >
             </div>
-<div class="izbornik-linkovi">
-    <a href="#pocetna" data-i18n="menu_pocetna">Početna</a>
-    <a href="o-kuci.html" data-i18n="menu_o_kuci">O kući</a>
-    <a href="lokacija.html" data-i18n="menu_lokacija">Lokacija</a>
 
-    <a href="opcina.html" data-i18n="menu_opcina">
-        O općini Špišić Bukovica
-    </a>
+            <div class="izbornik-linkovi">
+                <a
+                    href="#pocetna"
+                    data-i18n="menu_pocetna"
+                >
+                    Početna
+                </a>
 
-    <a href="#galerija" data-i18n="menu_virtualna_setnja">Virtualna šetnja</a>
-    <a href="zamjena.html" data-i18n="menu_zamjena">Zamjena</a>
-    <a href="kontakt.html" data-i18n="menu_kontakt">Kontakt</a>
-</div>
+                <a
+                    href="o-kuci.html"
+                    data-i18n="menu_o_kuci"
+                >
+                    O kući
+                </a>
+
+                <a
+                    href="lokacija.html"
+                    data-i18n="menu_lokacija"
+                >
+                    Lokacija
+                </a>
+
+                <a
+                    href="opcina.html"
+                    data-i18n="menu_opcina"
+                >
+                    O općini Špišić Bukovica
+                </a>
+
+                <a
+                    href="#virtualna-setnja"
+                    data-i18n="menu_virtualna_setnja"
+                >
+                    Virtualna šetnja
+                </a>
+
+                <a
+                    href="zamjena.html"
+                    data-i18n="menu_zamjena"
+                >
+                    Zamjena
+                </a>
+
+                <a
+                    href="kontakt.html"
+                    data-i18n="menu_kontakt"
+                >
+                    Kontakt
+                </a>
+            </div>
 
         </nav>
 
-
         <!-- GLAVNA SLIKA -->
-        <img src="Slike/kuca.jpg" alt="Kuća Happy Place">
-
+        <img
+            src="Slike/kuca.jpg"
+            alt="Kuća Happy Place"
+        >
 
         <!-- ZATAMNJENJE SLIKE -->
         <div class="zatamnjenje"></div>
-
 
         <!-- NASLOV NA SLICI -->
         <div class="naslovni-tekst">
@@ -66,12 +108,13 @@
             </p>
         </div>
 
-
         <!-- BRZI PODACI -->
         <div class="brzi-podaci">
 
             <div class="podatak">
-                <span data-i18n="podatak_lokacija">Lokacija</span>
+                <span data-i18n="podatak_lokacija">
+                    Lokacija
+                </span>
 
                 <strong>Špišić Bukovica</strong>
 
@@ -81,7 +124,9 @@
             </div>
 
             <div class="podatak">
-                <span data-i18n="podatak_cijena">Cijena</span>
+                <span data-i18n="podatak_cijena">
+                    Cijena
+                </span>
 
                 <strong>250.000 €</strong>
 
@@ -108,56 +153,98 @@
 
     </div>
 
+    <!-- IZBOR VIRTUALNE ŠETNJE -->
+    <section
+        class="virtualna-setnja"
+        id="virtualna-setnja"
+    >
+        <h2>Virtualna šetnja</h2>
 
-       <!-- JEZIČNI JAVASCRIPT -->
+        <p class="setnja-uvod">
+            Odaberite dio objekta koji želite razgledati.
+        </p>
+
+        <div class="setnje-izbor">
+
+            <a
+                class="setnja-kartica"
+                href="setnja.html"
+            >
+                <span class="setnja-ikona">🌳</span>
+
+                <h3>Šetnja vani</h3>
+
+                <p>
+                    Razgledajte prilaz, vrt, garažu i radionicu.
+                </p>
+            </a>
+
+            <a
+                class="setnja-kartica"
+                href="setnja-unutra.html"
+            >
+                <span class="setnja-ikona">🏠</span>
+
+                <h3>Šetnja unutra</h3>
+
+                <p>
+                    Razgledajte unutrašnjost objekta.
+                </p>
+            </a>
+
+        </div>
+    </section>
+
+    <!-- BROJAČ POSJETA -->
+    <div class="brojac-posjeta">
+        <span class="brojac-ikona">👁</span>
+
+        <span data-i18n="brojac_posjete">
+            Posjete:
+        </span>
+
+        <strong id="broj-posjeta">...</strong>
+    </div>
+
+    <!-- JEZIČNI JAVASCRIPT -->
     <script src="language.js"></script>
 
- <!-- BROJAČ POSJETA -->
-<div class="brojac-posjeta">
-    <span class="brojac-ikona">👁</span>
-    <span data-i18n="brojac_posjete">Posjete:</span>
-    <strong id="broj-posjeta">...</strong>
-</div>
+    <!-- GOATCOUNTER -->
+    <script>
+        window.goatcounter = {
+            no_onload: true
+        };
 
+        function ucitajBrojPosjeta() {
+            fetch(
+                "https://happyplace.goatcounter.com/counter/TOTAL.json?t="
+                + Date.now()
+            )
+                .then(function (response) {
+                    return response.json();
+                })
+                .then(function (data) {
+                    document.getElementById(
+                        "broj-posjeta"
+                    ).textContent = data.count;
+                })
+                .catch(function () {
+                    document.getElementById(
+                        "broj-posjeta"
+                    ).textContent = "";
+                });
+        }
+    </script>
 
-<!-- GOATCOUNTER -->
-<script>
-    window.goatcounter = {
-        no_onload: true
-    };
-
-    function ucitajBrojPosjeta() {
-
-        fetch('https://happyplace.goatcounter.com/counter/TOTAL.json?t=' + Date.now())
-
-            .then(response => response.json())
-
-            .then(data => {
-
-                document.getElementById('broj-posjeta').textContent = data.count;
-
-            })
-
-            .catch(() => {
-
-                document.getElementById('broj-posjeta').textContent = '';
-
-            });
-    }
-</script>
-
-
-<script
-    data-goatcounter="https://happyplace.goatcounter.com/count"
-    async
-    src="//gc.zgo.at/count.js"
-
-    onload="
-        window.goatcounter.count();
-
-        setTimeout(ucitajBrojPosjeta, 1500);
-    ">
-</script>
+    <script
+        data-goatcounter="https://happyplace.goatcounter.com/count"
+        async
+        src="//gc.zgo.at/count.js"
+        onload="
+            window.goatcounter.count();
+            setTimeout(ucitajBrojPosjeta, 1500);
+        "
+    ></script>
 
 </body>
 </html>

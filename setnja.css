@@ -1,0 +1,113 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    overflow: hidden;
+    background: #111;
+    font-family: Arial, sans-serif;
+}
+
+.setnja {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+#fotografija {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+    background: #111;
+}
+
+button {
+    position: absolute;
+    top: 50%;
+
+    width: 64px;
+    height: 64px;
+
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+
+    color: white;
+    background: rgba(0, 0, 0, 0.45);
+
+    font-size: 34px;
+    cursor: pointer;
+
+    transform: translateY(-50%);
+    transition: background 0.2s, transform 0.2s;
+}
+
+button:hover {
+    background: rgba(0, 0, 0, 0.75);
+    transform: translateY(-50%) scale(1.08);
+}
+
+#lijevo {
+    left: 24px;
+}
+
+#desno {
+    right: 24px;
+}
+
+#gore {
+    top: 24px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#gore:hover {
+    transform: translateX(-50%) scale(1.08);
+}
+
+#dolje {
+    top: auto;
+    bottom: 24px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#dolje:hover {
+    transform: translateX(-50%) scale(1.08);
+}
+
+button[hidden] {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    button {
+        width: 52px;
+        height: 52px;
+        font-size: 28px;
+    }
+
+    #lijevo {
+        left: 12px;
+    }
+
+    #desno {
+        right: 12px;
+    }
+
+    #gore {
+        top: 12px;
+    }
+
+    #dolje {
+        bottom: 12px;
+    }
+}

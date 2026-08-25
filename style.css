@@ -2114,3 +2114,157 @@ body {
     .galerija-mreza { grid-template-columns: 1fr; }
     .galerija-mreza button { height: 260px; }
 }
+/* =========================================================
+   IZBOR VIRTUALNE ŠETNJE
+   ========================================================= */
+
+.virtualna-setnja {
+    margin: 30px;
+    padding: 80px 30px;
+
+    background:
+        radial-gradient(
+            circle at 10% 20%,
+            rgba(255, 255, 255, 0.95) 0,
+            transparent 30%
+        ),
+        radial-gradient(
+            circle at 90% 70%,
+            rgba(222, 211, 194, 0.7) 0,
+            transparent 30%
+        ),
+        #f7f4ef;
+
+    border-radius: 30px;
+    text-align: center;
+}
+
+.virtualna-setnja h2 {
+    margin: 0 0 14px;
+
+    font-family: Georgia, serif;
+    font-size: 48px;
+    font-weight: normal;
+
+    color: #29251f;
+}
+
+.setnja-uvod {
+    max-width: 650px;
+    margin: 0 auto 42px;
+
+    font-family: Georgia, serif;
+    font-size: 19px;
+    line-height: 1.6;
+    font-style: italic;
+
+    color: #776d63;
+}
+
+.setnje-izbor {
+    width: min(900px, 100%);
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 28px;
+}
+
+.setnja-kartica {
+    position: relative;
+    display: block;
+
+    min-height: 230px;
+    padding: 42px 30px;
+
+    box-sizing: border-box;
+
+    background: rgba(255, 255, 255, 0.92);
+    border: 1px solid rgba(120, 105, 90, 0.12);
+    border-radius: 24px;
+
+    color: #29251f;
+    text-align: center;
+    text-decoration: none;
+
+    box-shadow: 0 12px 35px rgba(40, 35, 30, 0.1);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        background 0.3s ease;
+}
+
+.setnja-kartica:hover {
+    transform: translateY(-7px);
+
+    background: #fffdf9;
+
+    box-shadow:
+        0 20px 45px rgba(40, 35, 30, 0.16);
+}
+
+.setnja-ikona {
+    display: block;
+    margin-bottom: 18px;
+
+    font-size: 52px;
+    line-height: 1;
+}
+
+.setnja-kartica h3 {
+    margin: 0 0 13px;
+
+    font-family: Georgia, serif;
+    font-size: 30px;
+    font-weight: normal;
+
+    color: #29251f;
+}
+
+.setnja-kartica p {
+    max-width: 320px;
+    margin: 0 auto;
+
+    font-size: 17px;
+    line-height: 1.65;
+
+    color: #625d56;
+}
+
+/* MOBITEL */
+
+@media (max-width: 700px) {
+    .virtualna-setnja {
+        margin: 15px;
+        padding: 55px 18px;
+        border-radius: 22px;
+    }
+
+    .virtualna-setnja h2 {
+        font-size: 38px;
+    }
+
+    .setnja-uvod {
+        margin-bottom: 30px;
+        font-size: 17px;
+    }
+
+    .setnje-izbor {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .setnja-kartica {
+        min-height: 0;
+        padding: 32px 22px;
+    }
+
+    .setnja-ikona {
+        font-size: 44px;
+    }
+
+    .setnja-kartica h3 {
+        font-size: 27px;
+    }
+}
