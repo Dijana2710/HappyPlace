@@ -98,7 +98,7 @@ const translations = {
             "⌂ Izolacija",
 
         nova_oprema_izolacija_opis:
-            "Kuća je kvalitetno izolirana od temelja do krova, s termo fasadom i pažljivo izvedenim završnim slojevima.",
+            "Kuća je kvalitetno izolirana, a termo fasada izvedena je s 15 cm grafitnog stiropora, što pridonosi smanjenju toplinskih gubitaka i boljoj energetskoj učinkovitosti.",
 
         nova_oprema_uredaji_naslov:
             "✓ Oprema",
@@ -606,7 +606,7 @@ const translations = {
             "⌂ Insulation",
 
         nova_oprema_izolacija_opis:
-            "The house is well insulated from the foundations to the roof, with a thermal façade and carefully finished exterior layers.",
+            "The house is well insulated, and the thermal façade features 15 cm of graphite-enhanced polystyrene insulation, helping to reduce heat loss and improve energy efficiency.",
 
         nova_oprema_uredaji_naslov:
             "✓ Equipment",
@@ -1127,7 +1127,7 @@ const translations = {
             "⌂ Wärmedämmung",
 
         nova_oprema_izolacija_opis:
-            "Das Haus ist vom Fundament bis zum Dach hochwertig gedämmt und verfügt über eine Wärmedämmfassade sowie sorgfältig ausgeführte Abschlussarbeiten.",
+            "Das Haus ist hochwertig gedämmt. Die Wärmedämmfassade ist mit 15 cm starkem Graphit-Styropor ausgeführt, wodurch Wärmeverluste reduziert und die Energieeffizienz verbessert werden.",
 
         nova_oprema_uredaji_naslov:
             "✓ Ausstattung",
