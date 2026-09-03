@@ -2573,6 +2573,7 @@ body {
     .izbornik {
         padding: 15px;
         align-items: flex-start;
+        z-index: 10;
     }
 
     .logo img {
