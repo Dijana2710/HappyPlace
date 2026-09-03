@@ -303,6 +303,185 @@ body {
     color: #111;
 }
 
+/* TABLICA I ZNAČAJKE - OSNOVNI PODACI */
+
+.osnovni-detalji {
+    max-width: 1320px;
+    margin: 0 auto 90px;
+}
+
+.osnovni-detalji-zaglavlje {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.osnovni-detalji-zaglavlje span {
+    display: inline-block;
+    margin-bottom: 9px;
+    color: #8b725c;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.osnovni-detalji-zaglavlje h2 {
+    margin: 0;
+    color: #29251f;
+    font-size: 38px;
+}
+
+.osnovni-detalji-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1.15fr) minmax(360px, 0.85fr);
+    gap: 28px;
+    align-items: start;
+}
+
+.osnovni-tablica-kartica,
+.osnovni-znacajke-kartica {
+    overflow: hidden;
+    padding: 34px;
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid rgba(139, 114, 92, 0.16);
+    border-radius: 25px;
+    box-shadow: 0 12px 35px rgba(40, 35, 30, 0.09);
+}
+
+.osnovni-tablica-kartica h3,
+.osnovni-znacajke-kartica > h3 {
+    margin: 0 0 24px;
+    color: #29251f;
+    font-size: 27px;
+}
+
+.osnovni-tablica {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 16px;
+}
+
+.osnovni-tablica tr:nth-child(odd) {
+    background: #f5f1eb;
+}
+
+.osnovni-tablica th,
+.osnovni-tablica td {
+    padding: 12px 15px;
+    border-bottom: 1px solid rgba(139, 114, 92, 0.1);
+    text-align: left;
+    vertical-align: top;
+}
+
+.osnovni-tablica th {
+    width: 43%;
+    color: #66594d;
+    font-weight: 500;
+}
+
+.osnovni-tablica td {
+    color: #241f1a;
+    font-weight: 700;
+}
+
+.osnovni-znacajke-kartica {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+}
+
+.osnovni-znacajke-kartica > h3 {
+    grid-column: 1 / -1;
+    margin-bottom: 8px;
+}
+
+.osnovni-grupa {
+    padding: 20px;
+    background: #f5f1eb;
+    border-radius: 17px;
+}
+
+.osnovni-grupa-siroka {
+    grid-column: 1 / -1;
+}
+
+.osnovni-grupa h4 {
+    margin: 0 0 13px;
+    color: #3a312a;
+    font-size: 16px;
+}
+
+.osnovni-grupa ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.osnovni-grupa li {
+    position: relative;
+    margin: 8px 0;
+    padding-left: 20px;
+    color: #5c5147;
+    font-size: 15px;
+    line-height: 1.45;
+}
+
+.osnovni-grupa li::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #9b8068;
+    content: "✓";
+    font-weight: 700;
+}
+
+@media (max-width: 980px) {
+    .osnovni-detalji-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 650px) {
+    .osnovni-stranica {
+        margin: 15px;
+    }
+
+    .osnovni-detalji-zaglavlje h2 {
+        font-size: 30px;
+    }
+
+    .osnovni-tablica-kartica,
+    .osnovni-znacajke-kartica {
+        padding: 22px;
+        border-radius: 20px;
+    }
+
+    .osnovni-znacajke-kartica {
+        grid-template-columns: 1fr;
+    }
+
+    .osnovni-grupa-siroka,
+    .osnovni-znacajke-kartica > h3 {
+        grid-column: auto;
+    }
+
+    .osnovni-tablica th,
+    .osnovni-tablica td {
+        display: block;
+        width: auto;
+    }
+
+    .osnovni-tablica th {
+        padding-bottom: 3px;
+        border-bottom: 0;
+        font-size: 14px;
+    }
+
+    .osnovni-tablica td {
+        padding-top: 3px;
+    }
+}
+
 /* RASPORED KUĆE */
 
 .raspored-stranica {
