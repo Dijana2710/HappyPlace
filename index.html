@@ -37,7 +37,11 @@
                 >
             </div>
 
-            <div class="izbornik-linkovi">
+            <button class="mobilni-izbornik-gumb" type="button" aria-label="Otvori izbornik" aria-expanded="false" aria-controls="glavni-linkovi">
+                <span></span><span></span><span></span>
+            </button>
+
+            <div class="izbornik-linkovi" id="glavni-linkovi">
                 <a
                     href="#pocetna"
                     data-i18n="menu_pocetna"
@@ -221,6 +225,25 @@
 
     <!-- JEZIČNI JAVASCRIPT -->
     <script src="language.js"></script>
+
+    <script>
+        const mobilniIzbornikGumb = document.querySelector(".mobilni-izbornik-gumb");
+        const glavniLinkovi = document.getElementById("glavni-linkovi");
+
+        mobilniIzbornikGumb.addEventListener("click", function () {
+            const otvoren = glavniLinkovi.classList.toggle("otvoren");
+            mobilniIzbornikGumb.classList.toggle("otvoren", otvoren);
+            mobilniIzbornikGumb.setAttribute("aria-expanded", otvoren ? "true" : "false");
+        });
+
+        glavniLinkovi.querySelectorAll("a").forEach(function (poveznica) {
+            poveznica.addEventListener("click", function () {
+                glavniLinkovi.classList.remove("otvoren");
+                mobilniIzbornikGumb.classList.remove("otvoren");
+                mobilniIzbornikGumb.setAttribute("aria-expanded", "false");
+            });
+        });
+    </script>
 
     <!-- GOATCOUNTER -->
     <script>
