@@ -384,6 +384,11 @@ body {
     font-weight: 700;
 }
 
+.osnovni-tablica tr:last-child th,
+.osnovni-tablica tr:last-child td {
+    border-bottom: 0;
+}
+
 .osnovni-znacajke-kartica {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
