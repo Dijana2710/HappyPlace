@@ -1,3 +1,10 @@
+:root {
+    --setnja-tamna: #25231f;
+    --setnja-zelena: #66705a;
+    --setnja-terakota: #a9684b;
+    --setnja-pijesak: #ded5c9;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -448,4 +455,31 @@ button[hidden] {
     .setnja-izbornik.otvoren {
         grid-template-columns: 1fr;
     }
+}
+
+.setnja-status,
+.setnja-izbornik-gumb,
+.smjer-gumb,
+.setnja-uputa,
+.setnja-povratak {
+    background: rgba(37, 35, 31, 0.78);
+}
+
+.setnja-status span {
+    color: var(--setnja-pijesak);
+}
+
+.setnja-izbornik {
+    background: rgba(37, 35, 31, 0.95);
+}
+
+.setnja-izbornik button:hover,
+.setnja-izbornik button.aktivan {
+    background: var(--setnja-zelena);
+}
+
+.setnja button:focus-visible,
+.setnja a:focus-visible {
+    outline: 3px solid var(--setnja-terakota);
+    outline-offset: 3px;
 }

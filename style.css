@@ -1,6 +1,19 @@
+:root {
+    --boja-pozadina: #f7f4ee;
+    --boja-kartica: #fffcf8;
+    --boja-tekst: #28231f;
+    --boja-tekst-sekundarni: #6e6258;
+    --boja-zelena: #66705a;
+    --boja-zelena-tamna: #4f5946;
+    --boja-terakota: #a9684b;
+    --boja-pijesak: #ded5c9;
+    --boja-tamna: #25231f;
+}
+
 body {
     margin: 0;
-    background-color: #f4f1ec;
+    background-color: var(--boja-pozadina);
+    color: var(--boja-tekst);
 }
 
 /* CIJELA NASLOVNA */
@@ -2828,4 +2841,131 @@ body {
     .naslovna > img {
         height: 800px;
     }
+}
+
+/* =========================================================
+   UJEDNAČENA PALETA BOJA
+   ========================================================= */
+
+.virtualna-setnja,
+.raspored-stranica,
+.pomocni-stranica,
+.oprema-stranica,
+.galerija-stranica,
+.lokacija-stranica,
+.zamjena-stranica,
+.kontakt-stranica,
+.opcina-page {
+    background-color: var(--boja-pozadina);
+    color: var(--boja-tekst);
+}
+
+.osnovni-sadrzaj,
+.osnovni-tablica-kartica,
+.osnovni-znacajke-kartica,
+.raspored-kartica,
+.pomocni-red,
+.setnja-kartica,
+.lokacija-kartica,
+.zamjena-kartica,
+.kontakt-kartica,
+.opcina-info,
+.opcina-kartica {
+    background: var(--boja-kartica);
+    border-color: var(--boja-pijesak);
+    color: var(--boja-tekst);
+}
+
+.osnovni-grupa,
+.osnovni-tablica tr:nth-child(odd) {
+    background: #f1ede6;
+}
+
+.osnovni-detalji-zaglavlje span,
+.opcina-oznaka,
+.galerija-zaglavlje p,
+.lokacija-oznaka,
+.zamjena-oznaka {
+    color: var(--boja-terakota);
+}
+
+.osnovni-detalji-zaglavlje h2,
+.osnovni-tablica-kartica h3,
+.osnovni-znacajke-kartica > h3,
+.osnovni-grupa h4,
+.virtualna-setnja h2,
+.setnja-kartica h3,
+.lokacija-kartica h2,
+.zamjena-kartica > h2,
+.opcina-kartica h2,
+.opcina-info h2 {
+    color: var(--boja-tekst);
+}
+
+.osnovni-sadrzaj p,
+.osnovni-tablica th,
+.osnovni-grupa li,
+.setnja-uvod,
+.setnja-kartica p,
+.lokacija-kartica > p,
+.zamjena-kartica > p,
+.opcina-kartica p:not(.opcina-oznaka),
+.opcina-info p {
+    color: var(--boja-tekst-sekundarni);
+}
+
+.osnovni-tablica td {
+    color: var(--boja-tekst);
+}
+
+.osnovni-grupa li::before {
+    color: var(--boja-zelena);
+}
+
+.back-gumb,
+.jezici button {
+    border-color: var(--boja-pijesak);
+    background: rgba(255, 252, 248, 0.94);
+    color: var(--boja-tekst-sekundarni);
+}
+
+.back-gumb:hover,
+.jezici button:hover,
+.jezici button.aktivan-jezik {
+    background: var(--boja-zelena);
+    color: white;
+}
+
+.opcina-gumb,
+.lokacija-gumb,
+.zamjena-gumb,
+.kontakt-gumb {
+    background: var(--boja-zelena);
+    color: white;
+}
+
+.opcina-gumb:hover,
+.lokacija-gumb:hover,
+.zamjena-gumb:hover,
+.kontakt-gumb:hover {
+    background: var(--boja-zelena-tamna);
+}
+
+.brzi-podaci,
+.kuca-izbornik {
+    background: rgba(37, 35, 31, 0.76);
+}
+
+.izbornik-linkovi.otvoren {
+    background: rgba(37, 35, 31, 0.96);
+}
+
+.brojac-posjeta {
+    background: rgba(37, 35, 31, 0.9);
+}
+
+a:focus-visible,
+button:focus-visible {
+    outline: 3px solid var(--boja-terakota);
+    outline-offset: 3px;
 }
