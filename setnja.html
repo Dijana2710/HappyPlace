@@ -11,16 +11,26 @@
 
 <body>
     <main class="setnja">
-        <img
-    id="fotografija"
-    src="Setnja/1-prilaz.jpg"
-    alt="Prilaz objektu"
->
+        <img id="fotografija" src="Setnja/1-prilaz.jpg" alt="Prilaz objektu">
+        <div class="setnja-zatamnjenje"></div>
 
-<button id="lijevo" aria-label="Pogled lijevo">←</button>
-<button id="desno" aria-label="Pogled desno">→</button>
-<button id="gore" aria-label="Kreni naprijed">↑</button>
-<button id="dolje" aria-label="Okreni se natrag">↓</button>
+        <a class="setnja-povratak" href="index.html#virtualna-setnja">← <span id="tekst-povratak">Povratak</span></a>
+
+        <header class="setnja-status">
+            <span id="vrsta-setnje">Vanjska šetnja</span>
+            <strong id="oznaka-prizora">Prilaz objektu</strong>
+            <small id="napredak-prizora">Prizor 1 od 10</small>
+        </header>
+
+        <button class="setnja-izbornik-gumb" id="izbornik-gumb" type="button" aria-expanded="false" aria-controls="izbornik-lokacija">☰ <span id="tekst-lokacije">Lokacije</span></button>
+        <nav class="setnja-izbornik" id="izbornik-lokacija" aria-label="Lokacije vanjske šetnje"></nav>
+
+        <button class="smjer-gumb" id="lijevo" type="button"><span class="smjer-ikona">←</span><span class="smjer-tekst"></span></button>
+        <button class="smjer-gumb" id="desno" type="button"><span class="smjer-tekst"></span><span class="smjer-ikona">→</span></button>
+        <button class="smjer-gumb" id="gore" type="button"><span class="smjer-ikona">↑</span><span class="smjer-tekst"></span></button>
+        <button class="smjer-gumb" id="dolje" type="button"><span class="smjer-ikona">↓</span><span class="smjer-tekst"></span></button>
+
+        <p class="setnja-uputa" id="setnja-uputa">Odaberite strelicu ili povucite prstom za kretanje.</p>
     </main>
 
     <script src="setnja.js"></script>

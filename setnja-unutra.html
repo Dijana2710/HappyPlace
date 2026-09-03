@@ -11,22 +11,25 @@
 <body>
     <main class="setnja">
         <img id="fotografija" src="Unutra/IMG_1741.JPEG" alt="Ulazni hodnik">
+        <div class="setnja-zatamnjenje"></div>
 
-        <a class="setnja-povratak" href="index.html#virtualna-setnja">← Povratak</a>
-        <div class="setnja-oznaka" id="oznaka-prizora">Ulazni hodnik</div>
+        <a class="setnja-povratak" href="index.html#virtualna-setnja">← <span id="tekst-povratak">Povratak</span></a>
 
-        <button id="lijevo" type="button" aria-label="Pogled lijevo">←</button>
-        <button id="desno" type="button" aria-label="Pogled desno">→</button>
-        <button id="gore" type="button" aria-label="Kreni naprijed">↑</button>
-        <button id="dolje" type="button" aria-label="Vrati se natrag">↓</button>
+        <header class="setnja-status">
+            <span id="vrsta-setnje">Unutarnja šetnja</span>
+            <strong id="oznaka-prizora">Ulazni hodnik</strong>
+            <small id="napredak-prizora">Prizor 1 od 23</small>
+        </header>
 
-        <nav class="hodnik-odabiri" id="hodnik-odabiri" aria-label="Prostorije iz ulaznog hodnika">
-            <button type="button" data-prizor="soba1"><span>←</span> Soba 1</button>
-            <button type="button" data-prizor="kupaonica"><span>←</span> Kupaonica</button>
-            <button type="button" data-prizor="soba2"><span>←</span> Soba 2</button>
-            <button type="button" data-prizor="soba3"><span>↑</span> Soba 3</button>
-            <button type="button" data-prizor="tehnoSoba"><span>→</span> Tehno soba</button>
-        </nav>
+        <button class="setnja-izbornik-gumb" id="izbornik-gumb" type="button" aria-expanded="false" aria-controls="izbornik-lokacija">☰ <span id="tekst-lokacije">Prostorije</span></button>
+        <nav class="setnja-izbornik" id="izbornik-lokacija" aria-label="Prostorije"></nav>
+
+        <button class="smjer-gumb" id="lijevo" type="button"><span class="smjer-ikona">←</span><span class="smjer-tekst"></span></button>
+        <button class="smjer-gumb" id="desno" type="button"><span class="smjer-tekst"></span><span class="smjer-ikona">→</span></button>
+        <button class="smjer-gumb" id="gore" type="button"><span class="smjer-ikona">↑</span><span class="smjer-tekst"></span></button>
+        <button class="smjer-gumb" id="dolje" type="button"><span class="smjer-ikona">↓</span><span class="smjer-tekst"></span></button>
+
+        <p class="setnja-uputa" id="setnja-uputa">Odaberite strelicu ili povucite prstom za kretanje.</p>
     </main>
 
     <script src="setnja-unutra.js"></script>
