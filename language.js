@@ -19,7 +19,7 @@ const translations = {
         menu_zamjena: "Zamjena",
         menu_kontakt: "Kontakt",
 
-        pocetna_slogan: "Moj mali dio svemira",
+        pocetna_slogan: "Vaš mali dio svemira!",
         brojac_posjete: "Posjete:",
 
         podatak_lokacija: "Lokacija",
@@ -250,7 +250,7 @@ const translations = {
             "Osnovni podaci",
 
         osnovni_podnaslov:
-            "Happy Place — Moj mali dio svemira",
+            "Happy Place — Vaš mali dio svemira!",
 
         osnovni_opis1:
             "Prodajemo novu, potpuno uređenu i namještenu obiteljsku kuću površine 134 m² bruto, modernog i funkcionalnog rasporeda, smještenu svega 8 km od centra Virovitice, u srcu općine Špišić Bukovica. Kuća se nalazi na parceli od 1.630 m².",
@@ -323,22 +323,22 @@ const translations = {
             "Prostran i funkcionalan prostor za svakodnevni život i rad",
 
         raspored_spavace:
-            "spavaće sobe",
+            "spavaće sobe — 10,80 m² + 8,04 m² + 8,12 m²",
 
         raspored_kupaonica:
-            "kupaonica",
+            "kupaonica — 5,88 m²",
 
         raspored_tehnicka:
-            "tehnička prostorija",
+            "tehnička prostorija — 4,11 m²",
 
         raspored_smocnica:
-            "smočnica",
+            "smočnica — 2,40 m²",
 
         raspored_open:
             "Open space",
 
         raspored_dnevni:
-            "dnevni boravak, blagovaonica i kuhinja",
+            "dnevni boravak 25,51 m², blagovaonica 9,65 m² i kuhinja 6,93 m²",
 
         raspored_tavan:
             "Tavan",
@@ -831,22 +831,22 @@ const translations = {
             "A spacious and functional home for everyday living and work",
 
         raspored_spavace:
-            "bedrooms",
+            "bedrooms — 10.80 m² + 8.04 m² + 8.12 m²",
 
         raspored_kupaonica:
-            "bathroom",
+            "bathroom — 5.88 m²",
 
         raspored_tehnicka:
-            "utility room",
+            "utility room — 4.11 m²",
 
         raspored_smocnica:
-            "pantry",
+            "pantry — 2.40 m²",
 
         raspored_open:
             "Open-plan",
 
         raspored_dnevni:
-            "living room, dining area and kitchen",
+            "living room 25.51 m², dining area 9.65 m² and kitchen 6.93 m²",
 
         raspored_tavan:
             "Attic",
@@ -1352,22 +1352,22 @@ const translations = {
             "Ein großzügiges und funktionales Zuhause für Alltag und Arbeit",
 
         raspored_spavace:
-            "Schlafzimmer",
+            "Schlafzimmer — 10,80 m² + 8,04 m² + 8,12 m²",
 
         raspored_kupaonica:
-            "Badezimmer",
+            "Badezimmer — 5,88 m²",
 
         raspored_tehnicka:
-            "Technikraum",
+            "Technikraum — 4,11 m²",
 
         raspored_smocnica:
-            "Speisekammer",
+            "Speisekammer — 2,40 m²",
 
         raspored_open:
             "Offener Wohnbereich",
 
         raspored_dnevni:
-            "Wohnzimmer, Essbereich und Küche",
+            "Wohnzimmer 25,51 m², Essbereich 9,65 m² und Küche 6,93 m²",
 
         raspored_tavan:
             "Dachboden",
