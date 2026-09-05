@@ -420,7 +420,7 @@ const translations = {
             "VAŽAN UVJET",
 
         zamjena_lokacija_naslov:
-            "Čista dokumentacija",
+            "Uredna dokumentacija",
 
         zamjena_lokacija_opis1:
             "Stanovi u suterenu i potkrovlju ne dolaze u obzir. Za stanove iznad prvog kata obavezan je lift.",
