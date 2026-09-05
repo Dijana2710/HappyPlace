@@ -30,8 +30,8 @@ const translations = {
             "Prodaje vlasnik, bez tereta, uredna dokumentacija",
 
         podatak_zamjena: "Moguća zamjena",
-        podatak_stanovi: "Noviji manji stan",
-        podatak_koprivnica: "uz nadoplatu",
+        podatak_stanovi: "Stan u većem gradu",
+        podatak_koprivnica: "Prednost ima novija gradnja",
 
 
         // =========================
@@ -411,7 +411,7 @@ const translations = {
             "Zamjena",
 
         zamjena_podnaslov:
-            "Moguća zamjena za stan u većem gradu.",
+            "Moguća zamjena za stan u većem gradu. Prednost ima novija gradnja.",
 
         zamjena_glavni_naslov:
             "Moguća zamjena za stan u većem gradu",
@@ -585,8 +585,8 @@ const translations = {
             "Sold directly by the owner, free of liens, clear documentation",
 
         podatak_zamjena: "Exchange possible",
-        podatak_stanovi: "Newer smaller apartment",
-        podatak_koprivnica: "with additional payment",
+        podatak_stanovi: "Apartment in a larger city",
+        podatak_koprivnica: "Newer construction preferred",
 
 
         // =========================
@@ -966,7 +966,7 @@ const translations = {
             "Exchange",
 
         zamjena_podnaslov:
-            "Possible exchange for an apartment in a larger city.",
+            "Possible exchange for an apartment in a larger city. Newer construction preferred.",
 
         zamjena_glavni_naslov:
             "Possible exchange for an apartment in a larger city",
@@ -1140,8 +1140,8 @@ const translations = {
             "Direktverkauf durch den Eigentümer, lastenfrei, vollständige Unterlagen",
 
         podatak_zamjena: "Tausch möglich",
-        podatak_stanovi: "Neuere kleinere Wohnung",
-        podatak_koprivnica: "mit Zuzahlung",
+        podatak_stanovi: "Wohnung in einer größeren Stadt",
+        podatak_koprivnica: "Neuere Bauweise bevorzugt",
 
 
         // =========================
@@ -1534,7 +1534,7 @@ const translations = {
             "Tausch",
 
         zamjena_podnaslov:
-            "Tausch gegen eine Wohnung in einer größeren Stadt möglich.",
+            "Tausch gegen eine Wohnung in einer größeren Stadt möglich. Neuere Bauweise bevorzugt.",
 
         zamjena_glavni_naslov:
             "Tausch gegen eine Wohnung in einer größeren Stadt möglich",
