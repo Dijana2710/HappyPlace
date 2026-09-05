@@ -411,25 +411,22 @@ const translations = {
             "Zamjena",
 
         zamjena_podnaslov:
-            "Moguća zamjena za manji, noviji stan uz nadoplatu.",
+            "Moguća zamjena za stan u većem gradu.",
 
         zamjena_glavni_naslov:
-            "Moguća zamjena za manji, noviji stan uz nadoplatu",
+            "Moguća zamjena za stan u većem gradu",
 
         zamjena_vazan_uvjet:
             "VAŽAN UVJET",
 
         zamjena_lokacija_naslov:
-            "Lokacija nam je posebno važna",
+            "Čista dokumentacija",
 
         zamjena_lokacija_opis1:
-            "Prednost imaju nekretnine u većim gradovima, što bliže centru i što dalje od željezničke pruge.",
-
-        zamjena_lokacija_opis2:
-            "Nekretnine koje se nalaze u neposrednoj blizini željezničke pruge, kao ni nekretnine oko i s druge strane željezničke pruge u odnosu na centar grada, ne možemo razmatrati.",
+            "Stanovi u suterenu i potkrovlju ne dolaze u obzir. Za stanove iznad prvog kata obavezan je lift.",
 
         zamjena_zavrsno:
-            "Kod stanova tražimo noviju gradnju i urednu dokumentaciju. Otvoreni smo za ozbiljne prijedloge ako postoji obostrani interes i mogućnost dogovora.",
+            "Otvoreni smo za ozbiljne prijedloge ako postoji obostrani interes i mogućnost dogovora.",
 
 
         // =====================================================
@@ -969,25 +966,22 @@ const translations = {
             "Exchange",
 
         zamjena_podnaslov:
-            "Possible exchange for a smaller, newer apartment with an additional payment.",
+            "Possible exchange for an apartment in a larger city.",
 
         zamjena_glavni_naslov:
-            "Possible exchange for a smaller, newer apartment with an additional payment",
+            "Possible exchange for an apartment in a larger city",
 
         zamjena_vazan_uvjet:
             "IMPORTANT CONDITION",
 
         zamjena_lokacija_naslov:
-            "Location is especially important to us",
+            "Clear documentation",
 
         zamjena_lokacija_opis1:
-            "Preference is given to properties in larger towns and cities, as close to the centre as possible and as far from the railway line as possible.",
-
-        zamjena_lokacija_opis2:
-            "We cannot consider properties located directly next to the railway line, nor properties situated around or on the opposite side of the railway line in relation to the town centre.",
+            "Basement and attic apartments are not considered. An elevator is required for apartments above the first floor.",
 
         zamjena_zavrsno:
-            "For apartments, we are looking for newer construction and clear documentation. We are open to serious proposals where there is mutual interest and room for agreement.",
+            "We are open to serious proposals where there is mutual interest and room for agreement.",
 
 
         // =====================================================
@@ -1540,25 +1534,22 @@ const translations = {
             "Tausch",
 
         zamjena_podnaslov:
-            "Tausch gegen eine kleinere, neuere Wohnung mit Zuzahlung möglich.",
+            "Tausch gegen eine Wohnung in einer größeren Stadt möglich.",
 
         zamjena_glavni_naslov:
-            "Tausch gegen eine kleinere, neuere Wohnung mit Zuzahlung möglich",
+            "Tausch gegen eine Wohnung in einer größeren Stadt möglich",
 
         zamjena_vazan_uvjet:
             "WICHTIGE BEDINGUNG",
 
         zamjena_lokacija_naslov:
-            "Die Lage ist uns besonders wichtig",
+            "Einwandfreie Unterlagen",
 
         zamjena_lokacija_opis1:
-            "Bevorzugt werden Immobilien in größeren Städten, möglichst zentrumsnah und möglichst weit von einer Bahnstrecke entfernt.",
-
-        zamjena_lokacija_opis2:
-            "Immobilien in unmittelbarer Nähe einer Bahnstrecke sowie Immobilien, die vom Stadtzentrum aus gesehen an oder auf der anderen Seite der Bahnstrecke liegen, können wir nicht berücksichtigen.",
+            "Souterrain- und Dachgeschosswohnungen kommen nicht infrage. Für Wohnungen oberhalb des ersten Obergeschosses ist ein Aufzug erforderlich.",
 
         zamjena_zavrsno:
-            "Bei Wohnungen suchen wir einen neueren Bau und vollständige Unterlagen. Für ernsthafte Vorschläge sind wir offen, sofern gegenseitiges Interesse und eine Einigungsmöglichkeit bestehen.",
+            "Für ernsthafte Vorschläge sind wir offen, sofern gegenseitiges Interesse und eine Einigungsmöglichkeit bestehen.",
 
 
         // =====================================================
